@@ -55,6 +55,9 @@
         height: 83vh;
         margin-bottom: 0;
     }
+    #project{
+        margin-bottom: 355rem;
+    }
     article{
         font-size: 1rem;
     }
