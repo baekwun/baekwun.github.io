@@ -567,13 +567,25 @@ footer p {
   height: 90%;
 }
 
-      /* Center Image Gallery */
-      #projectGallery {
-        display: flex;
-        justify-content: center;
-      }
+/* Center Image Gallery */
+#projectGallery {
+  display: flex;
+  justify-content: center;
+  
+}
 
-      /* Set width of Image Gallery */
-      .keen-slider {
-        height: 400px;
-      }
+/* Set width of Image Gallery */
+.keen-slider {
+  width: 400px;
+  height: 400px;
+}
+
+.modal-content{
+  padding: 1.5rem;
+  flex: 1;
+  background: white;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  text-align: center;
+}
