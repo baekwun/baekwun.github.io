@@ -558,31 +558,3 @@ footer {
 footer p {
   text-align: center;
 }
-
-/* CAROUSEL IMG */
-
-.carousel-img {
-  border-radius: 2rem;
-  width: 40%;
-  height: 40%;
-}
-
-/* Center Image Gallery */
-#projectGallery {
-  display: flex;
-  justify-content: center;
-  
-}
-
-/* Set width of Image Gallery */
-.keen-slider {
-  width: 10%;
-}
-
-.modal-content{
-  text-decoration: none;
-  flex: 1;
-  background: white;
-  border-radius: 2rem;
-  text-align: center;
-}

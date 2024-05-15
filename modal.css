@@ -19,6 +19,9 @@
     padding: 20px;
     border: 1px solid #888;
     width: 80%; /* Could be more or less, depending on screen size */
+    flex: 1;
+    border-radius: 2rem;
+    text-align: center;
   }
   
   /* The Close Button */
@@ -35,3 +38,29 @@
     text-decoration: none;
     cursor: pointer;
   }
+
+  .projectMembers li{
+    text-decoration: none;
+  }
+
+  /* CAROUSEL IMG */
+
+.carousel-img {
+  border-radius: 2rem;
+  width: 40%;
+  height: 40%;
+}
+
+/* Center Image Gallery */
+#projectGallery {
+  display: flex;
+  justify-content: center;
+  
+}
+
+/* Set width of Image Gallery */
+.keen-slider {
+  width: 10%;
+}
+
+  
