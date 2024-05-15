@@ -382,10 +382,6 @@ section{
     flex-direction: column;
 }
 
-/* .about-containers, .about-details-container{
-    display: flex;
-} */
-
 .about-containers, .about-details-container{
     display: grid;
     grid-template-columns: auto auto auto;
