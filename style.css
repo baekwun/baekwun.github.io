@@ -566,3 +566,14 @@ footer p {
   width: 90%;
   height: 90%;
 }
+
+      /* Center Image Gallery */
+      #projectGallery {
+        display: flex;
+        justify-content: center;
+      }
+
+      /* Set width of Image Gallery */
+      .keen-slider {
+        width: 60%;
+      }
