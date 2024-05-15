@@ -16,6 +16,7 @@ function projectFetch(id) {
         description: "Graphics Design with Canva",
         members: ["Mendoza, Kyn M."],
       };
+      break;
       case 2:
         data = {
           title: "Unit Listing",
