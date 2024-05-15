@@ -45,6 +45,9 @@
     #contact, footer {
         height: 40vh;
     }
+    #contact{
+        margin-top: 185rem;
+    }
     #profile{
         height: 83vh;
         margin-bottom: 0;
@@ -56,7 +59,7 @@
         height: fit-content;
         margin-bottom: 2rem;
     }
-    .about-containers, .contact-info-upper-container, .btn-container{
+    .about-containers, .contact-info-upper-container, .btn-container {
         flex-wrap: wrap;
     }
     .contact-info-container p, .nav-links li a {
@@ -90,5 +93,11 @@
     .about-containers, .about-details-container{
         display: flex;
     }
+
+    .project-details-container, .project-containers{
+        display: flex;
+        flex-direction: column;
+    }
+    
 }
 
