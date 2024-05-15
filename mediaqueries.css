@@ -39,6 +39,9 @@
     .about-containers{
         margin-top: 0;
     }
+    .modal-content{
+        width: 80%;
+    }
 }
 
 @media screen and (max-width:1200px) {

@@ -3,19 +3,26 @@ function projectFetch(id) {
   switch (id) {
     case 0:
       data = {
-        title: "Edukista",
-        photoURL: ["assets/projects/project-1.png", "images/2.png", "images/3.png"],
-        description: "Lorem Ipsum dolor sit itzem",
+        title: "Long Distance Love Tips",
+        photoURL: ["assets/carousel-1/c1.png", "assets/carousel-1/c2.png", "assets/carousel-1/c3.png", "assets/carousel-1/c4.png", "assets/carousel-1/c5.png" ,"assets/carousel-1/c6.png", "assets/carousel-1/c7.png"],
+        description: "Graphics Design with Canva",
         members: ["Mendoza, Kyn M."],
       };
       break;
     case 1:
       data = {
-        title: "StickyGo",
-        photoURL: ["images/1.png", "images/2.png", "images/3.png"],
-        description: "Lorem Ipsum dolor sit itzem",
+        title: "Date Night Ideas",
+        photoURL: ["assets/carousel-2/c1.png", "assets/carousel-2/c2.png", "assets/carousel-2/c3.png", "assets/carousel-2/c4.png", "assets/carousel-2/c5.png", "assets/carousel-2/c6.png", "assets/carousel-2/c7.png"],
+        description: "Graphics Design with Canva",
         members: ["Mendoza, Kyn M."],
       };
+      case 2:
+        data = {
+          title: "Unit Listing",
+          photoURL: ["assets/carousel-3/c1.png", "assets/carousel-3/c2.png", "assets/carousel-3/c3.png", "assets/carousel-3/c4.png"],
+          description: "Graphics Design with Canva",
+          members: ["Mendoza, Kyn M."],
+        };
       break;
     default:
       data = {
