@@ -177,16 +177,4 @@
     }
 
 }
-
-/* Media Query for Laptops and Desktops */
-@media (min-width: 1025px) and (max-width: 1280px) {
-}
-
-/* Media Query for Large screens */
-@media (min-width: 1281px) {
-    body {
-        
-    }
-}
-
 /* hello */
