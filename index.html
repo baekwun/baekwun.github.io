@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="home.css">
     <link rel="stylesheet" href="mediaqueries.css">
-    <link rel="icon" type="image/x-icon" href="/assets/logo/KYME-logo.ico">
+    <!-- Light mode favicon (default) -->
+    <link rel="icon" id="favicon" type="image/x-icon" href="/assets/logo/kyme-logo-light.ico">
     <script src="https://kit.fontawesome.com/aa83f0c211.js" crossorigin="anonymous"></script>
     <title>Kyn Mendoza</title>
 </head>
@@ -13,7 +14,7 @@
 
     <!-- Navigation -->
     <nav id="desktop-nav">
-        <div><img src="/assets/logo/KYME-logo.png" alt="" class="logo"></div>
+        <div><img src="/assets/logo/kyme-logo.svg" alt="" class="logo"></div>
         <div>
           <ul class="nav-links">
             <li><a href="#about">About</a></li>
@@ -24,6 +25,10 @@
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
+        <button id="theme-toggle" class="theme-btn" aria-label="Toggle dark mode">
+  <i class="fa-solid fa-moon"></i>
+</button>
+
       </nav>
 
     <!-- Profile -->
@@ -638,6 +643,8 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 </script>
+
+<script src="theme.js"></script>
 
 <footer>
   <p>Copyright &#169; 2024 Kyn Mendoza. <br />All Rights Reserved.</p>
