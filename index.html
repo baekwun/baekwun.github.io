@@ -26,26 +26,6 @@
         </div>
       </nav>
 
-    <!-- Hamburger Navigation -->
-    <!-- <nav id="hamburger-nav">
-      <div class="logo">Kyn Mendoza</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Certificates</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">I.T Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Media Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
-    </nav> -->
-
     <!-- Profile -->
      <section id="profile" class="global-padding">
         
@@ -278,40 +258,57 @@
             <div class="cert-container">
 
                 <div class="cert-img-container">
-                    <img id="cert-img" src="/assets/certificates/KYN-MENDOZA-Videography-and-Photography-Certificate.jpg" alt="" class="cert-img">
-                        <!-- <div class="cert-info">Seminar: Intro to Photography and Videography: A beginners guide</div> -->
+                    <label for="cert-toggle-1">
+                      <img id="cert-img-1" src="/assets/certificates/KYN-MENDOZA-Videography-and-Photography-Certificate.jpg" alt="" class="cert-img">
+                    </label>
                 </div>
 
                 <div class="cert-img-container">
-                    <img id="cert-img" src="/assets/certificates/KYN-MENDOZA-Capstone-Certificate.jpg" alt="" class="cert-img">
+                    <label for="cert-toggle-2">
+                      <img id="cert-img-2" src="/assets/certificates/KYN-MENDOZA-Capstone-Certificate.jpg" alt="" class="cert-img">
+                    </label>
                 </div>
  
                 <div class="cert-img-container">
-                    <img id="cert-img" src="/assets/certificates/KYN-MENDOZA-DISAT-Inernship-Program-Certificate.jpg" alt="" class="cert-img">
+                    <label for="cert-toggle-3">
+                      <img id="cert-img-3" src="/assets/certificates/KYN-MENDOZA-DISAT-Inernship-Program-Certificate.jpg" alt="" class="cert-img">
+                    </label>
                 </div>
  
                 <div class="cert-img-container">
-                    <img id="cert-img" src="/assets/certificates/kyme.mendoza-Become-A-Virtual-Assistant-In-A-Week-Become-A-Virtual-Assistant-In-1-Week-Learn-Freelancing-With-Angel_page-0001.jpg" alt="" class="cert-img">
+                    <label for="cert-toggle-4">
+                      <img id="cert-img-4" src="/assets/certificates/kyme.mendoza-Become-A-Virtual-Assistant-In-A-Week-Become-A-Virtual-Assistant-In-1-Week-Learn-Freelancing-With-Angel_page-0001.jpg" alt="" class="cert-img">
+                    </label>
                 </div>
  
                 <div class="cert-img-container">
-                    <img id="cert-img" src="/assets/certificates/KYN-MENDOZA-WordPress-and-Marketing-WordPress-and-Marketing-Kurso.ph_page-0001.jpg" alt="" class="cert-img">
+                    <label for="cert-toggle-5">
+                      <img id="cert-img-5" src="/assets/certificates/KYN-MENDOZA-WordPress-and-Marketing-WordPress-and-Marketing-Kurso.ph_page-0001.jpg" alt="" class="cert-img">
+                    </label>
                 </div>
  
                 <div class="cert-img-container">
-                    <img id="cert-img" src="/assets/certificates/KYN-MENDOZA-Social-Media-Management-Social-Media-Management-Kurso.ph_page-0001.jpg" alt="" class="cert-img">
+                    <label for="cert-toggle-6">
+                      <img id="cert-img-6" src="/assets/certificates/KYN-MENDOZA-Social-Media-Management-Social-Media-Management-Kurso.ph_page-0001.jpg" alt="" class="cert-img">
+                    </label>
                 </div>
             
                 <div class="cert-img-container">
-                    <img id="cert-img" src="/assets/certificates/KYN-MENDOZA-Copywriting-Coffee-Copywriting-Kurso.ph_page-0001.jpg" alt="" class="cert-img">
+                    <label for="cert-toggle-7">
+                      <img id="cert-img-7" src="/assets/certificates/KYN-MENDOZA-Copywriting-Coffee-Copywriting-Kurso.ph_page-0001.jpg" alt="" class="cert-img">
+                    </label>
                 </div>
  
                 <div class="cert-img-container">
-                    <img id="cert-img" src="/assets/certificates/KYN-MENDOZA-Graphic-Design-w-Canva-Graphic-Design-w-Canva-Kurso.ph_page-0001.jpg" alt="" class="cert-img">
+                    <label for="cert-toggle-8">
+                      <img id="cert-img-8" src="/assets/certificates/KYN-MENDOZA-Graphic-Design-w-Canva-Graphic-Design-w-Canva-Kurso.ph_page-0001.jpg" alt="" class="cert-img">
+                    </label>
                 </div>
  
                 <div class="cert-img-container">
-                    <img id="cert-img" src="/assets/certificates/KYN-MENDOZA-Facebook-Ads-AutoPilot-FB-Ads-AutoPilot-Kurso.ph_page-0001.jpg" alt="" class="cert-img">
+                    <label for="cert-toggle-9">
+                      <img id="cert-img-9" src="/assets/certificates/KYN-MENDOZA-Facebook-Ads-AutoPilot-FB-Ads-AutoPilot-Kurso.ph_page-0001.jpg" alt="" class="cert-img">
+                    </label>
                 </div>
 
             </div>
@@ -320,7 +317,98 @@
 
        </section>
 
-       <!-- IT Projects -->
+       <!-- Certificate modals (checkbox toggles) -->
+       <input type="checkbox" id="cert-toggle-1" class="modal-toggle">
+       <div class="modal">
+         <label for="cert-toggle-1" class="modal-overlay"></label>
+         <div class="modal-content cert-modal">
+           <img src="/assets/certificates/KYN-MENDOZA-Videography-and-Photography-Certificate.jpg" alt="" class="modal-image">
+           <p class="modal-description">Videography and Photography Certificate</p>
+           <label for="cert-toggle-1" class="modal-close-btn">Close</label>
+         </div>
+       </div>
+
+       <input type="checkbox" id="cert-toggle-2" class="modal-toggle">
+       <div class="modal">
+         <label for="cert-toggle-2" class="modal-overlay"></label>
+         <div class="modal-content cert-modal">
+           <img src="/assets/certificates/KYN-MENDOZA-Capstone-Certificate.jpg" alt="" class="modal-image">
+           <p class="modal-description">Capstone Certificate</p>
+           <label for="cert-toggle-2" class="modal-close-btn">Close</label>
+         </div>
+       </div>
+
+       <input type="checkbox" id="cert-toggle-3" class="modal-toggle">
+       <div class="modal">
+         <label for="cert-toggle-3" class="modal-overlay"></label>
+         <div class="modal-content cert-modal">
+           <img src="/assets/certificates/KYN-MENDOZA-DISAT-Inernship-Program-Certificate.jpg" alt="" class="modal-image">
+           <p class="modal-description">DISAT Internship Program Certificate</p>
+           <label for="cert-toggle-3" class="modal-close-btn">Close</label>
+         </div>
+       </div>
+
+       <input type="checkbox" id="cert-toggle-4" class="modal-toggle">
+       <div class="modal">
+         <label for="cert-toggle-4" class="modal-overlay"></label>
+         <div class="modal-content cert-modal">
+           <img src="/assets/certificates/kyme.mendoza-Become-A-Virtual-Assistant-In-A-Week-Become-A-Virtual-Assistant-In-1-Week-Learn-Freelancing-With-Angel_page-0001.jpg" alt="" class="modal-image">
+           <p class="modal-description">Become a Virtual Assistant (1-week) Certificate</p>
+           <label for="cert-toggle-4" class="modal-close-btn">Close</label>
+         </div>
+       </div>
+
+       <input type="checkbox" id="cert-toggle-5" class="modal-toggle">
+       <div class="modal">
+         <label for="cert-toggle-5" class="modal-overlay"></label>
+         <div class="modal-content cert-modal">
+           <img src="/assets/certificates/KYN-MENDOZA-WordPress-and-Marketing-WordPress-and-Marketing-Kurso.ph_page-0001.jpg" alt="" class="modal-image">
+           <p class="modal-description">WordPress and Marketing Certificate</p>
+           <label for="cert-toggle-5" class="modal-close-btn">Close</label>
+         </div>
+       </div>
+
+       <input type="checkbox" id="cert-toggle-6" class="modal-toggle">
+       <div class="modal">
+         <label for="cert-toggle-6" class="modal-overlay"></label>
+         <div class="modal-content cert-modal">
+           <img src="/assets/certificates/KYN-MENDOZA-Social-Media-Management-Social-Media-Management-Kurso.ph_page-0001.jpg" alt="" class="modal-image">
+           <p class="modal-description">Social Media Management Certificate</p>
+           <label for="cert-toggle-6" class="modal-close-btn">Close</label>
+         </div>
+       </div>
+
+       <input type="checkbox" id="cert-toggle-7" class="modal-toggle">
+       <div class="modal">
+         <label for="cert-toggle-7" class="modal-overlay"></label>
+         <div class="modal-content cert-modal">
+           <img src="/assets/certificates/KYN-MENDOZA-Copywriting-Coffee-Copywriting-Kurso.ph_page-0001.jpg" alt="" class="modal-image">
+           <p class="modal-description">Copywriting Certificate</p>
+           <label for="cert-toggle-7" class="modal-close-btn">Close</label>
+         </div>
+       </div>
+
+       <input type="checkbox" id="cert-toggle-8" class="modal-toggle">
+       <div class="modal">
+         <label for="cert-toggle-8" class="modal-overlay"></label>
+         <div class="modal-content cert-modal">
+           <img src="/assets/certificates/KYN-MENDOZA-Graphic-Design-w-Canva-Graphic-Design-w-Canva-Kurso.ph_page-0001.jpg" alt="" class="modal-image">
+           <p class="modal-description">Graphic Design (Canva) Certificate</p>
+           <label for="cert-toggle-8" class="modal-close-btn">Close</label>
+         </div>
+       </div>
+
+       <input type="checkbox" id="cert-toggle-9" class="modal-toggle">
+       <div class="modal">
+         <label for="cert-toggle-9" class="modal-overlay"></label>
+         <div class="modal-content cert-modal">
+           <img src="/assets/certificates/KYN-MENDOZA-Facebook-Ads-AutoPilot-FB-Ads-AutoPilot-Kurso.ph_page-0001.jpg" alt="" class="modal-image">
+           <p class="modal-description">Facebook Ads Autopilot Certificate</p>
+           <label for="cert-toggle-9" class="modal-close-btn">Close</label>
+         </div>
+       </div>
+
+       <!-- I.T Projects -->
        <section id="it-projects" class="global-padding">
 
         <div class="wrapper-main">
@@ -331,7 +419,9 @@
           <div class="project-container">
 
             <div class="project-container-box">
-              <img src="/assets/projects/project-1.png" alt="project-1-img" class="project-img">
+              <label for="proj-toggle-1">
+                <img src="/assets/projects/project-1.png" alt="project-1-img" class="project-img">
+              </label>
               <div class="contact-container">
                 <img src="/assets/icons/github.png" alt="linkedin icon" class="icon contact-icon">
                 <p><a href="https://github.com/baekwun/edukista-v2">Edukista - @Baekwun</a></p>
@@ -340,7 +430,9 @@
             </div>
 
             <div class="project-container-box">
-              <img src="/assets/projects/project-2.png" alt="project-2-img" class="project-img">
+              <label for="proj-toggle-2">
+                <img src="/assets/projects/project-2.png" alt="project-2-img" class="project-img">
+              </label>
               <div class="contact-container">
                 <img src="/assets/icons/github.png" alt="linkedin icon" class="icon contact-icon">
                 <p><a href="https://github.com/Wasabi199/stickygo">StickyGO - @Wasabi199</a></p>
@@ -349,7 +441,9 @@
             </div>
 
             <div class="project-container-box">
-              <img src="/assets/projects/project-3.png" alt="project-3-img" class="project-img">
+              <label for="proj-toggle-3">
+                <img src="/assets/projects/project-3.png" alt="project-3-img" class="project-img">
+              </label>
               <div class="contact-container">
                 <img src="/assets/icons/github.png" alt="linkedin icon" class="icon contact-icon">
                 <p><a href="https://github.com/Evanchii/PayPoint">PayPoint - @Evanchii</a></p>
@@ -363,16 +457,73 @@
 
        </section>
 
-       <!-- Media Projects -->
+       <!-- Project 1 Modal (slider ready) -->
+       <input type="checkbox" id="proj-toggle-1" class="modal-toggle">
+       <div class="modal">
+         <label for="proj-toggle-1" class="modal-overlay"></label>
+         <div class="modal-content project-modal">
+           <div class="slider-container">
+             <div class="slider">
+               <img class="slide" src="/assets/projects/project-1.png" alt="project1-1">
+               <!-- add more <img class="slide" src="..."> here when you want -->
+             </div>
+             <button class="prev" onclick="changeSlide(-1, 'proj-toggle-1')">&#10094;</button>
+             <button class="next" onclick="changeSlide(1, 'proj-toggle-1')">&#10095;</button>
+           </div>
+           <div class="project-details">
+             <h3>Edukista</h3>
+             <p>Role: Front-end Developer. Completed on: <strong>MM/DD/YYYY</strong></p>
+           </div>
+           <label for="proj-toggle-1" class="modal-close-btn">Close</label>
+         </div>
+       </div>
+
+       <!-- Project 2 Modal (slider ready) -->
+       <input type="checkbox" id="proj-toggle-2" class="modal-toggle">
+       <div class="modal">
+         <label for="proj-toggle-2" class="modal-overlay"></label>
+         <div class="modal-content project-modal">
+           <div class="slider-container">
+             <div class="slider">
+               <img class="slide" src="/assets/projects/project-2.png" alt="project2-1">
+             </div>
+             <button class="prev" onclick="changeSlide(-1, 'proj-toggle-2')">&#10094;</button>
+             <button class="next" onclick="changeSlide(1, 'proj-toggle-2')">&#10095;</button>
+           </div>
+           <div class="project-details">
+             <h3>StickyGO</h3>
+             <p>Role: Project Manager / Front-end Developer. Completed on: <strong>MM/DD/YYYY</strong></p>
+           </div>
+           <label for="proj-toggle-2" class="modal-close-btn">Close</label>
+         </div>
+       </div>
+
+       <!-- Project 3 Modal (slider ready) -->
+       <input type="checkbox" id="proj-toggle-3" class="modal-toggle">
+       <div class="modal">
+         <label for="proj-toggle-3" class="modal-overlay"></label>
+         <div class="modal-content project-modal">
+           <div class="slider-container">
+             <div class="slider">
+               <img class="slide" src="/assets/projects/project-3.png" alt="project3-1">
+             </div>
+             <button class="prev" onclick="changeSlide(-1, 'proj-toggle-3')">&#10094;</button>
+             <button class="next" onclick="changeSlide(1, 'proj-toggle-3')">&#10095;</button>
+           </div>
+           <div class="project-details">
+             <h3>PayPoint</h3>
+             <p>Role: Graphics Design. Completed on: <strong>MM/DD/YYYY</strong></p>
+           </div>
+           <label for="proj-toggle-3" class="modal-close-btn">Close</label>
+         </div>
+       </div>
+
+       <!-- Media Projects (unchanged) -->
        <section id="media-projects" class="global-padding">
-
         <div class="wrapper-main">
-
           <p class="section-text-1">My Recent</p>
           <h1 class="title">Media Projects</h1>
-
           <div class="media-container">
-
             <div class="video-container">
               <h3>Capstone Project: Red Band</h3>
               <p class="section-text-1">Role: Animator</p>
@@ -402,7 +553,7 @@
               <p class="section-text-1">Role: Videographer/Editor</p>
               <iframe width="560" height="315" src="https://www.youtube.com/embed/taVhM-JuDvc?si=e_bOWaC97IU9sThj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
-            
+
             <div class="video-container">
               <h3>Personal Project: Sta. Barbara Town Plaza 2019</h3>
               <p class="section-text-1">Role: Videographer/Editor</p>
@@ -415,31 +566,16 @@
               <iframe width="560" height="315" src="https://www.youtube.com/embed/FACa2XW32JM?si=i4foEhTFZZzDZtsM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
 
-            <div class="video-container">
-              
-            </div>
-
-            <div class="video-container">
-              
-            </div>
-
-
           </div>
-
         </div>
-
        </section>
 
        <!-- Contact -->
         <section id="contact" class="global-padding">
-
           <div class="wrapper-main">
-
             <p class="section-text-1">Get in touch</p>
             <h1 class="title">Contact Me</h1>
-
             <div class="contact-info-container">
-
               <div class="contact-container">
                 <img src="/assets/icons/email.png" alt="email icon" class="icon contact-icon email-icon">
                 <p><a href="mailtp:kyme.business@gmail.com">kyme.business@gmail.com</a></p>
@@ -451,9 +587,7 @@
               </div>
   
             </div>
-
           </div>
-
         </section>
 
      <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
@@ -471,6 +605,39 @@
         loop: true,
       });
     </script>
+
+<script>
+/* Slider logic for checkbox modals: each modal uses its own .slider */
+function changeSlide(n, modalToggleId){
+  const checkbox = document.getElementById(modalToggleId);
+  if (!checkbox) return;
+  // the structure: input.modal-toggle + .modal
+  const modal = checkbox.nextElementSibling;
+  if (!modal) return;
+  const slides = modal.querySelectorAll('.slide');
+  if (!slides.length) return;
+
+  // find current visible index
+  let current = 0;
+  slides.forEach((s,i) => {
+    if (s.style.display === 'block') current = i;
+  });
+
+  slides.forEach(s => s.style.display = 'none');
+  let next = current + n;
+  if (next >= slides.length) next = 0;
+  if (next < 0) next = slides.length - 1;
+  slides[next].style.display = 'block';
+}
+
+// initialize sliders so first slide shows
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.slider').forEach(slider => {
+    const slides = slider.querySelectorAll('.slide');
+    slides.forEach((s,i) => s.style.display = i === 0 ? 'block' : 'none');
+  });
+});
+</script>
 
 <footer>
   <p>Copyright &#169; 2024 Kyn Mendoza. <br />All Rights Reserved.</p>
