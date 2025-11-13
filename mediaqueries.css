@@ -61,12 +61,23 @@
         align-items: stretch;
     }
 
-    .project-img{
-        width: 300px;
-      }
+    /* Project images mobile */
+    .project-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        justify-items: center;
+        align-items: start;
+        padding: 1rem;
+    }
+
+    .project-img {
+        width: 100%;
+        max-width: 300px;
+    }
 }
 
-/* Media Query for low resolution  Tablets, Ipads */
+/* Media Query for low resolution Tablets, Ipads */
 @media (min-width: 481px) and (max-width: 767px) {
     #desktop-nav{
         display: none;
@@ -129,9 +140,20 @@
         align-items: stretch;
     }
 
-    .project-img{
-        width: 300px;
-      }
+    /* Project images small tablets */
+    .project-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+        justify-items: center;
+        align-items: start;
+        padding: 1rem;
+    }
+
+    .project-img {
+        width: 100%;
+        max-width: 300px;
+    }
 }
 
 /* Media Query for Tablets Ipads portrait mode */
@@ -176,10 +198,38 @@
         align-items: center;
     }
 
+    /* Project images tablets */
+    .project-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+        justify-items: center;
+        align-items: start;
+        padding: 1rem;
+    }
+
+    .project-img {
+        width: 100%;
+        max-width: 400px;
+    }
 }
 
 /* Media Query for Laptops and Desktops */
 @media (min-width: 1025px) and (max-width: 1280px) {
+    /* Project images desktop */
+    .project-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        justify-items: center;
+        align-items: start;
+        padding: 1rem;
+    }
+
+    .project-img {
+        width: 100%;
+        max-width: 500px;
+    }
 }
 
 /* Media Query for Large screens
@@ -195,7 +245,9 @@
     padding: 15px;
   }
   .slider { width: 100%; max-width: 100%; }
+  
 }
+
 @media (max-width: 480px) {
   .thumbnail { width: 150px; }
   .modal-close-btn { padding: 8px 16px; }

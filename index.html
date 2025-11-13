@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="home.css">
     <link rel="stylesheet" href="mediaqueries.css">
     <!-- Light mode favicon (default) -->
-    <link rel="icon" id="favicon" type="image/x-icon" href="/assets/logo/kyme-logo-light.ico">
+    <link rel="icon" id="favicon" type="image/x-icon" href="assets/logo/kyme-logo.ico">
     <script src="https://kit.fontawesome.com/aa83f0c211.js" crossorigin="anonymous"></script>
     <title>Kyn Mendoza</title>
 </head>
@@ -14,7 +14,7 @@
 
     <!-- Navigation -->
     <nav id="desktop-nav">
-        <div><img src="/assets/logo/kyme-logo.svg" alt="" class="logo"></div>
+        <div><img id="site-logo" src="assets/logo/kyme-logo-light.svg" alt="" class="logo"></div>
         <div>
           <ul class="nav-links">
             <li><a href="#about">About</a></li>
@@ -25,11 +25,10 @@
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
-        <button id="theme-toggle" class="theme-btn" aria-label="Toggle dark mode">
-  <i class="fa-solid fa-moon"></i>
-</button>
 
       </nav>
+
+        <button id="theme-toggle" class="theme-btn" aria-label="Toggle dark mode"><i class="fa-solid fa-moon"></i></button>
 
     <!-- Profile -->
      <section id="profile" class="global-padding">
@@ -327,7 +326,7 @@
        <div class="modal">
          <label for="cert-toggle-1" class="modal-overlay"></label>
          <div class="modal-content cert-modal">
-           <img src="/assets/certificates/KYN-MENDOZA-Videography-and-Photography-Certificate.jpg" alt="" class="modal-image">
+           <img src="assets/certificates/KYN-MENDOZA-Videography-and-Photography-Certificate.jpg" alt="" class="modal-image">
            <p class="modal-description">Videography and Photography Certificate</p>
            <label for="cert-toggle-1" class="modal-close-btn">Close</label>
          </div>
@@ -469,7 +468,7 @@
          <div class="modal-content project-modal">
            <div class="slider-container">
              <div class="slider">
-               <img class="slide" src="/assets/projects/project-1.png" alt="project1-1">
+               <img class="slide" src="assets/projects/project-1.png" alt="project1-1">
                <!-- add more <img class="slide" src="..."> here when you want -->
              </div>
              <button class="prev" onclick="changeSlide(-1, 'proj-toggle-1')">&#10094;</button>
@@ -596,53 +595,6 @@
         </section>
 
      <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-
-    <script>
-      var typed = new Typed("#element", {
-        strings: [
-          "I.T Support",
-          "Front-end Designer",
-          "Video Editor",
-          "Graphics Designer", 
-          "Virtual Assistant",
-        ],
-        typeSpeed: 50,
-        loop: true,
-      });
-    </script>
-
-<script>
-/* Slider logic for checkbox modals: each modal uses its own .slider */
-function changeSlide(n, modalToggleId){
-  const checkbox = document.getElementById(modalToggleId);
-  if (!checkbox) return;
-  // the structure: input.modal-toggle + .modal
-  const modal = checkbox.nextElementSibling;
-  if (!modal) return;
-  const slides = modal.querySelectorAll('.slide');
-  if (!slides.length) return;
-
-  // find current visible index
-  let current = 0;
-  slides.forEach((s,i) => {
-    if (s.style.display === 'block') current = i;
-  });
-
-  slides.forEach(s => s.style.display = 'none');
-  let next = current + n;
-  if (next >= slides.length) next = 0;
-  if (next < 0) next = slides.length - 1;
-  slides[next].style.display = 'block';
-}
-
-// initialize sliders so first slide shows
-document.addEventListener('DOMContentLoaded', () => {
-  document.querySelectorAll('.slider').forEach(slider => {
-    const slides = slider.querySelectorAll('.slide');
-    slides.forEach((s,i) => s.style.display = i === 0 ? 'block' : 'none');
-  });
-});
-</script>
 
 <script src="theme.js"></script>
 
