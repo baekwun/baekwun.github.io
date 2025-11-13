@@ -245,7 +245,15 @@
     padding: 15px;
   }
   .slider { width: 100%; max-width: 100%; }
-  
+    .details-container {
+    padding: 1.2rem 1.5rem;
+  }
+  .details-container {
+    padding: 1.5rem 1.2rem;
+  }
+  .experience-sub-title {
+    font-size: 1.25rem;
+  }
 }
 
 @media (max-width: 480px) {
