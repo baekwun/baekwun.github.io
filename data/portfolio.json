@@ -1,0 +1,186 @@
+{
+  "experience": [
+    {
+      "title": "MIS Associate | System Administrator",
+      "company": "Guanzon Group of Companies · Full-time",
+      "date": "Oct 2024 – Present",
+      "location": "GK building, Tapuac dist. Dagupan City, Pangasinan · Philippines · On-site",
+      "bullets": [
+        "Provide technical support to system users.",
+        "Install, update, configure, and maintain company systems and servers.",
+        "Troubleshoot hardware, software, and network issues.",
+        "Perform data adjustments and ensure system security."
+      ],
+      "skills": "SQL · System Support · System Administration"
+    },
+    {
+      "title": "Freelance Illustrator",
+      "company": "Mod Paws · Seasonal",
+      "date": "Dec 2023 · 2 weeks",
+      "location": "Remote",
+      "bullets": [
+        "Provided freelance illustration services during their peak season.",
+        "Created digital illustrations and editorial artworks for marketing and design use.",
+        "Completed training and collaborated with the creative team remotely."
+      ],
+      "skills": "Adobe Illustrator · Digital Illustration · Freelancing · Adobe Photoshop"
+    },
+    {
+      "title": "Internship (Multiple roles)",
+      "company": "Digital Information Systems and Technologies",
+      "date": "May 2023 – Jul 2023 · 3 mos",
+      "location": "1952C Severino Reyes Street Sta Cruz, Manila · Philippines · On-site",
+      "sections": [
+        {
+          "subtitle": "Graphic Designer",
+          "bullets": [
+            "Created graphic designs for events and meetings, ensuring visually appealing outputs.",
+            "Worked collaboratively with the IT and media teams."
+          ],
+          "skills": "Adobe Illustrator · Canva · Adobe Photoshop · Figma"
+        },
+        {
+          "subtitle": "Frontend Web Developer",
+          "bullets": [
+            "Developed and designed front-end websites focusing on user experience and responsiveness.",
+            "Assisted in optimizing UI layouts and implementing web standards."
+          ],
+          "skills": "HTML · CSS · JavaScript · Figma · Chrome DevTools"
+        },
+        {
+          "subtitle": "Technical Support",
+          "bullets": [
+            "Provided IT support for the company’s system, ensuring smooth operations.",
+            "Resolved software and hardware issues and maintained network connectivity."
+          ],
+          "skills": "FileZilla · Microsoft Office · Google Workspace"
+        }
+      ]
+    }
+  ],
+  "certificates": [
+    {
+      "id": "cert-1",
+      "title": "Videography and Photography Certificate",
+      "image": "/assets/certificates/KYN-MENDOZA-Videography-and-Photography-Certificate.jpg",
+      "description": "Videography and Photography Certificate"
+    },
+    {
+      "id": "cert-2",
+      "title": "Capstone Certificate",
+      "image": "/assets/certificates/KYN-MENDOZA-Capstone-Certificate.jpg",
+      "description": "Capstone Certificate"
+    },
+    {
+      "id": "cert-3",
+      "title": "DISAT Internship Program Certificate",
+      "image": "/assets/certificates/KYN-MENDOZA-DISAT-Inernship-Program-Certificate.jpg",
+      "description": "DISAT Internship Program Certificate"
+    },
+    {
+      "id": "cert-4",
+      "title": "Become A Virtual Assistant (1-week)",
+      "image": "/assets/certificates/kyme.mendoza-Become-A-Virtual-Assistant-In-A-Week-Become-A-Virtual-Assistant-In-1-Week-Learn-Freelancing-With-Angel_page-0001.jpg",
+      "description": "Become a Virtual Assistant (1-week) Certificate"
+    },
+    {
+      "id": "cert-5",
+      "title": "WordPress and Marketing Certificate",
+      "image": "/assets/certificates/KYN-MENDOZA-WordPress-and-Marketing-WordPress-and-Marketing-Kurso.ph_page-0001.jpg",
+      "description": "WordPress and Marketing Certificate"
+    },
+    {
+      "id": "cert-6",
+      "title": "Social Media Management Certificate",
+      "image": "/assets/certificates/KYN-MENDOZA-Social-Media-Management-Social-Media-Management-Kurso.ph_page-0001.jpg",
+      "description": "Social Media Management Certificate"
+    },
+    {
+      "id": "cert-7",
+      "title": "Copywriting Certificate",
+      "image": "/assets/certificates/KYN-MENDOZA-Copywriting-Coffee-Copywriting-Kurso.ph_page-0001.jpg",
+      "description": "Copywriting Certificate"
+    },
+    {
+      "id": "cert-8",
+      "title": "Graphic Design (Canva) Certificate",
+      "image": "/assets/certificates/KYN-MENDOZA-Graphic-Design-w-Canva-Graphic-Design-w-Canva-Kurso.ph_page-0001.jpg",
+      "description": "Graphic Design (Canva) Certificate"
+    },
+    {
+      "id": "cert-9",
+      "title": "Facebook Ads Autopilot Certificate",
+      "image": "/assets/certificates/KYN-MENDOZA-Facebook-Ads-AutoPilot-FB-Ads-AutoPilot-Kurso.ph_page-0001.jpg",
+      "description": "Facebook Ads Autopilot Certificate"
+    }
+  ],
+  "projects": [
+    {
+      "id": "proj-1",
+      "title": "Edukista",
+      "thumb": "/assets/projects/project-1.png",
+      "images": ["/assets/projects/project-1.png"],
+      "github": "https://github.com/baekwun/edukista-v2",
+      "role": "Front-end Developer",
+      "completed": "03/17/2023",
+      "details": "Description: "
+    },
+    {
+      "id": "proj-2",
+      "title": "StickyGO",
+      "thumb": "/assets/projects/project-2.png",
+      "images": ["/assets/projects/project-2.png"],
+      "github": "https://github.com/Wasabi199/stickygo",
+      "role": "Project Manager · Front-end Developer",
+      "completed": "",
+      "details": "Description: "
+    },
+    {
+      "id": "proj-3",
+      "title": "PayPoint",
+      "thumb": "/assets/projects/project-3.png",
+      "images": ["/assets/projects/project-3.png"],
+      "github": "https://github.com/Evanchii/PayPoint",
+      "role": "Graphics Design",
+      "completed": "",
+      "details": "Description: "
+    }
+  ],
+  "media": [
+    {
+      "title": "Capstone Project: Red Band",
+      "role": "Animator",
+      "embed": "https://www.youtube.com/embed/SC_pSNtCtd0?si=R5i2Yh4LKj_TLNbG"
+    },
+    {
+      "title": "Personal Project: Pssst...",
+      "role": "Cast/Producer",
+      "embed": "https://www.youtube.com/embed/klzSFXV2tHE?si=LwU4tZidlXQJZEdg"
+    },
+    {
+      "title": "Personal Project: Nicole Sy @ 18",
+      "role": "Videographer/Editor",
+      "embed": "https://www.youtube.com/embed/Lf-lo2dk_6E?si=WeRTTQDGbJnPgk_S"
+    },
+    {
+      "title": "School Project: My Hero",
+      "role": "Videographer/Editor",
+      "embed": "https://www.youtube.com/embed/kcix1ZYC_Rc?si=wg4WvOH2QiHhNsSp"
+    },
+    {
+      "title": "School Project: Kampo Misteryo",
+      "role": "Videographer/Editor",
+      "embed": "https://www.youtube.com/embed/taVhM-JuDvc?si=e_bOWaC97IU9sThj"
+    },
+    {
+      "title": "Personal Project: Sta. Barbara Town Plaza 2019",
+      "role": "Videographer/Editor",
+      "embed": "https://www.youtube.com/embed/RxDn2kZGgFc?si=LDRqUzbPjRN4M0JL"
+    },
+    {
+      "title": "Personal Project: Hangad",
+      "role": "Videographer/Editor",
+      "embed": "https://www.youtube.com/embed/FACa2XW32JM?si=i4foEhTFZZzDZtsM"
+    }
+  ]
+}

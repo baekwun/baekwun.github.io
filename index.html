@@ -1,535 +1,231 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="home.css">
-    <link rel="stylesheet" href="mediaqueries.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="home.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
     <!-- Light mode favicon (default) -->
-    <link rel="icon" id="favicon" type="image/x-icon" href="assets/logo/kyme-logo.ico">
-    <script src="https://kit.fontawesome.com/aa83f0c211.js" crossorigin="anonymous"></script>
+    <link
+      rel="icon"
+      id="favicon"
+      type="image/x-icon"
+      href="assets/logo/kyme-logo.ico"
+    />
+    <script
+      src="https://kit.fontawesome.com/aa83f0c211.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Kyn Mendoza</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <!-- Navigation -->
     <nav id="desktop-nav">
-        <div><img id="site-logo" src="assets/logo/kyme-logo-light.svg" alt="" class="logo"></div>
-        <div>
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#certificates">Certificates</a></li>
-            <li><a href="#it-projects">I.T Projects</a></li>
-            <li><a href="#media-projects">Media Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
+      <div>
+        <a href="#profile">
+          <img
+            id="site-logo"
+            src="assets/logo/kyme-logo-light.svg"
+            alt="Logo"
+            class="logo"
+          />
+        </a>
+      </div>
 
-      </nav>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#certificates">Certificates</a></li>
+          <li><a href="#it-projects">I.T Projects</a></li>
+          <li><a href="#media-projects">Media Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
 
-        <button id="theme-toggle" class="theme-btn" aria-label="Toggle dark mode"><i class="fa-solid fa-moon"></i></button>
+    <button id="theme-toggle" class="theme-btn" aria-label="Toggle dark mode">
+      <i class="fa-solid fa-moon"></i>
+    </button>
 
     <!-- Profile -->
-     <section id="profile" class="global-padding">
-        
-        <div class="wrapper-main global-flex">
-            
-            <div class="section-pic-container">
-                <img src="./assets/profile_pictures/profile-pic.png" alt="profile-picture">
-            </div>
-    
-            <div class="section-text-container">
-
-                <p class="section-text-1">Hello, I'm</p>
-
-                <h1 class="title">Kyn Mendoza</h1>
-
-                <p class="section-text-2"><span id="element"></span></p>
-
-                <button class="btn" onclick="window.open('https://drive.google.com/file/d/1M3cQHsGonr80Yf9zeG-gwDSUfAeZ_yzO/view?usp=sharing')">Download CV</button>
-
-                <div class="socials-container">
-                    <img
-                      src="./assets/icons/linkedin.png"
-                      alt="linkedin profile"
-                      class="icon"
-                      onclick="location.href='https://www.linkedin.com/in/kynmendoza'"
-                    />
-                    <img
-                      src="./assets/icons/github.png"
-                      alt="github profile"
-                      class="icon"
-                      onclick="location.href='https://github.com/baekwun'"
-                    />
-                  </div>
-
-            </div>
-
+    <section id="profile" class="global-padding">
+      <div class="wrapper-main global-flex">
+        <div class="section-pic-container">
+          <img
+            src="./assets/profile_pictures/profile-pic.png"
+            alt="profile-picture"
+          />
         </div>
 
-     </section>
+        <div class="section-text-container">
+          <p class="section-text-1">Hello, I'm</p>
 
-     <!-- About -->
-      <section id="about" class="global-padding">
+          <h1 class="title">Kyn Mendoza</h1>
 
-        <div class="wrapper-main">
-            <p class="section-text-1">Learn More</p>
-        <p class="title">About Me</p>
-            <div class="section-container">
+          <p class="section-text-2"><span id="element"></span></p>
 
-                <div class="section-pic-container">
-                    <img src="/assets/profile_pictures/about-pic.png" alt="profile-picture" class="about-pic">
-                </div>
+          <button
+            class="btn"
+            onclick="window.open('https://drive.google.com/file/d/1M3cQHsGonr80Yf9zeG-gwDSUfAeZ_yzO/view?usp=sharing')"
+          >
+            Download CV
+          </button>
 
-                <div class="about-details-container">
-                    <div class="about-containers">
-                      <div class="details-container">
-                        <i class="fa-solid fa-award fa-2xl"></i>
-                        <h3>Experience</h3>
-                        <p>System Administration<br><br>Frontend Web Developer<br></p>
-                      </div>
-                      <div class="details-container">
-                        <i class="fa-solid fa-graduation-cap fa-2xl"></i>
-                        <h3>Education</h3>
-                        <p>
-                          Bachelor of Science in Information Technology <br><br>Phinma-University of Pangasinan
-                        </p>
-                      </div>
-                    </div>
-                    <div class="text-container">
-                      <p>I’m an IT graduate currently working as a System Administrator. I have experience in IT support, front-end web development, and hardware work — from building and troubleshooting computers to basic networking. I enjoy exploring different areas of tech and finding creative ways to solve problems.</p>
-                    </div>
-                  </div>
-
-            </div>
-
+          <div class="socials-container">
+            <img
+              src="./assets/icons/linkedin.png"
+              alt="linkedin profile"
+              class="icon"
+              onclick="location.href='https://www.linkedin.com/in/kynmendoza'"
+            />
+            <img
+              src="./assets/icons/github.png"
+              alt="github profile"
+              class="icon"
+              onclick="location.href='https://github.com/baekwun'"
+            />
+          </div>
         </div>
-
-      </section>
-
-<!-- Experience -->
-<section id="experience" class="global-padding">
-  <div class="wrapper-main">
-    <p class="section-text-1">Learn About My</p>
-    <h1 class="title">Experience</h1>
-
-    <div class="experience-details-container">
-      <div class="experience-container">
-
-        <!-- MIS Associate | System Administrator -->
-        <div class="details-container">
-          <h2 class="experience-sub-title">MIS Associate | System Administrator</h2>
-          <h3>Guanzon Group of Companies · Full-time</h3>
-          <p class="experience-date">Oct 2024 – Present</p>
-          <p class="experience-location">GK building, Tapuac dist. Dagupan City, Pangasinan · Philippines · On-site</p>
-          <ul class="experience-list">
-            <li>Provide technical support to system users.</li>
-            <li>Install, update, configure, and maintain company systems and servers.</li>
-            <li>Troubleshoot hardware, software, and network issues.</li>
-            <li>Perform data adjustments and ensure system security.</li>
-          </ul>
-          <p><strong>Skills:</strong> SQL · System Support · System Administration</p>
-        </div>
-
-        <!-- Freelance Illustrator -->
-        <div class="details-container">
-          <h2 class="experience-sub-title">Freelance Illustrator</h2>
-          <h3>Mod Paws · Seasonal</h3>
-          <p class="experience-date">Dec 2023 · 2 weeks</p>
-          <p class="experience-location">Remote</p>
-          <ul class="experience-list">
-            <li>Provided freelance illustration services during their peak season.</li>
-            <li>Created digital illustrations and editorial artworks for marketing and design use.</li>
-            <li>Completed training and collaborated with the creative team remotely.</li>
-          </ul>
-          <p><strong>Skills:</strong> Adobe Illustrator · Digital Illustration · Freelancing · Adobe Photoshop</p>
-        </div>
-
-        <!-- DISAT Internship -->
-        <div class="details-container">
-          <h2 class="experience-sub-title">Internship</h2>
-          <h3>Digital Information Systems and Technologies</h3>
-          <p class="experience-date">May 2023 – Jul 2023 · 3 mos</p>
-          <p class="experience-location">1952C Severino Reyes Street Sta Cruz, Manila · Philippines · On-site</p>
-
-          <h3>Graphic Designer</h3>
-          <ul class="experience-list">
-            <li>Created graphic designs for events and meetings, ensuring visually appealing outputs.</li>
-            <li>Worked collaboratively with the IT and media teams.</li>
-          </ul>
-          <p><strong>Skills:</strong> Adobe Illustrator · Canva · Adobe Photoshop · Figma</p>
-
-          <h3>Frontend Web Developer</h3>
-          <ul class="experience-list">
-            <li>Developed and designed front-end websites focusing on user experience and responsiveness.</li>
-            <li>Assisted in optimizing UI layouts and implementing web standards.</li>
-          </ul>
-          <p><strong>Skills:</strong> HTML · CSS · JavaScript · Figma · Chrome DevTools</p>
-
-          <h3>Technical Support</h3>
-          <ul class="experience-list">
-            <li>Provided IT support for the company’s system, ensuring smooth operations.</li>
-            <li>Resolved software and hardware issues and maintained network connectivity.</li>
-          </ul>
-          <p><strong>Skills:</strong> FileZilla · Microsoft Office · Google Workspace</p>
-        </div>
-
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-       <!-- Certificates -->
-       <section id="certificates" class="global-padding">
-
-        <div class="wrapper-main">
-
-            <p class="section-text-1">Check Out My</p>
-            <h1 class="title">Certificates</h1>
-
-            <div class="cert-container">
-
-                <div class="cert-img-container">
-                    <label for="cert-toggle-1">
-                      <img id="cert-img-1" src="/assets/certificates/KYN-MENDOZA-Videography-and-Photography-Certificate.jpg" alt="" class="cert-img">
-                    </label>
-                </div>
-
-                <div class="cert-img-container">
-                    <label for="cert-toggle-2">
-                      <img id="cert-img-2" src="/assets/certificates/KYN-MENDOZA-Capstone-Certificate.jpg" alt="" class="cert-img">
-                    </label>
-                </div>
- 
-                <div class="cert-img-container">
-                    <label for="cert-toggle-3">
-                      <img id="cert-img-3" src="/assets/certificates/KYN-MENDOZA-DISAT-Inernship-Program-Certificate.jpg" alt="" class="cert-img">
-                    </label>
-                </div>
- 
-                <div class="cert-img-container">
-                    <label for="cert-toggle-4">
-                      <img id="cert-img-4" src="/assets/certificates/kyme.mendoza-Become-A-Virtual-Assistant-In-A-Week-Become-A-Virtual-Assistant-In-1-Week-Learn-Freelancing-With-Angel_page-0001.jpg" alt="" class="cert-img">
-                    </label>
-                </div>
- 
-                <div class="cert-img-container">
-                    <label for="cert-toggle-5">
-                      <img id="cert-img-5" src="/assets/certificates/KYN-MENDOZA-WordPress-and-Marketing-WordPress-and-Marketing-Kurso.ph_page-0001.jpg" alt="" class="cert-img">
-                    </label>
-                </div>
- 
-                <div class="cert-img-container">
-                    <label for="cert-toggle-6">
-                      <img id="cert-img-6" src="/assets/certificates/KYN-MENDOZA-Social-Media-Management-Social-Media-Management-Kurso.ph_page-0001.jpg" alt="" class="cert-img">
-                    </label>
-                </div>
-            
-                <div class="cert-img-container">
-                    <label for="cert-toggle-7">
-                      <img id="cert-img-7" src="/assets/certificates/KYN-MENDOZA-Copywriting-Coffee-Copywriting-Kurso.ph_page-0001.jpg" alt="" class="cert-img">
-                    </label>
-                </div>
- 
-                <div class="cert-img-container">
-                    <label for="cert-toggle-8">
-                      <img id="cert-img-8" src="/assets/certificates/KYN-MENDOZA-Graphic-Design-w-Canva-Graphic-Design-w-Canva-Kurso.ph_page-0001.jpg" alt="" class="cert-img">
-                    </label>
-                </div>
- 
-                <div class="cert-img-container">
-                    <label for="cert-toggle-9">
-                      <img id="cert-img-9" src="/assets/certificates/KYN-MENDOZA-Facebook-Ads-AutoPilot-FB-Ads-AutoPilot-Kurso.ph_page-0001.jpg" alt="" class="cert-img">
-                    </label>
-                </div>
-
-            </div>
-
-        </div>
-
-       </section>
-
-       <!-- Certificate modals (checkbox toggles) -->
-       <input type="checkbox" id="cert-toggle-1" class="modal-toggle">
-       <div class="modal">
-         <label for="cert-toggle-1" class="modal-overlay"></label>
-         <div class="modal-content cert-modal">
-           <img src="assets/certificates/KYN-MENDOZA-Videography-and-Photography-Certificate.jpg" alt="" class="modal-image">
-           <p class="modal-description">Videography and Photography Certificate</p>
-           <label for="cert-toggle-1" class="modal-close-btn">Close</label>
-         </div>
-       </div>
-
-       <input type="checkbox" id="cert-toggle-2" class="modal-toggle">
-       <div class="modal">
-         <label for="cert-toggle-2" class="modal-overlay"></label>
-         <div class="modal-content cert-modal">
-           <img src="/assets/certificates/KYN-MENDOZA-Capstone-Certificate.jpg" alt="" class="modal-image">
-           <p class="modal-description">Capstone Certificate</p>
-           <label for="cert-toggle-2" class="modal-close-btn">Close</label>
-         </div>
-       </div>
-
-       <input type="checkbox" id="cert-toggle-3" class="modal-toggle">
-       <div class="modal">
-         <label for="cert-toggle-3" class="modal-overlay"></label>
-         <div class="modal-content cert-modal">
-           <img src="/assets/certificates/KYN-MENDOZA-DISAT-Inernship-Program-Certificate.jpg" alt="" class="modal-image">
-           <p class="modal-description">DISAT Internship Program Certificate</p>
-           <label for="cert-toggle-3" class="modal-close-btn">Close</label>
-         </div>
-       </div>
-
-       <input type="checkbox" id="cert-toggle-4" class="modal-toggle">
-       <div class="modal">
-         <label for="cert-toggle-4" class="modal-overlay"></label>
-         <div class="modal-content cert-modal">
-           <img src="/assets/certificates/kyme.mendoza-Become-A-Virtual-Assistant-In-A-Week-Become-A-Virtual-Assistant-In-1-Week-Learn-Freelancing-With-Angel_page-0001.jpg" alt="" class="modal-image">
-           <p class="modal-description">Become a Virtual Assistant (1-week) Certificate</p>
-           <label for="cert-toggle-4" class="modal-close-btn">Close</label>
-         </div>
-       </div>
-
-       <input type="checkbox" id="cert-toggle-5" class="modal-toggle">
-       <div class="modal">
-         <label for="cert-toggle-5" class="modal-overlay"></label>
-         <div class="modal-content cert-modal">
-           <img src="/assets/certificates/KYN-MENDOZA-WordPress-and-Marketing-WordPress-and-Marketing-Kurso.ph_page-0001.jpg" alt="" class="modal-image">
-           <p class="modal-description">WordPress and Marketing Certificate</p>
-           <label for="cert-toggle-5" class="modal-close-btn">Close</label>
-         </div>
-       </div>
-
-       <input type="checkbox" id="cert-toggle-6" class="modal-toggle">
-       <div class="modal">
-         <label for="cert-toggle-6" class="modal-overlay"></label>
-         <div class="modal-content cert-modal">
-           <img src="/assets/certificates/KYN-MENDOZA-Social-Media-Management-Social-Media-Management-Kurso.ph_page-0001.jpg" alt="" class="modal-image">
-           <p class="modal-description">Social Media Management Certificate</p>
-           <label for="cert-toggle-6" class="modal-close-btn">Close</label>
-         </div>
-       </div>
-
-       <input type="checkbox" id="cert-toggle-7" class="modal-toggle">
-       <div class="modal">
-         <label for="cert-toggle-7" class="modal-overlay"></label>
-         <div class="modal-content cert-modal">
-           <img src="/assets/certificates/KYN-MENDOZA-Copywriting-Coffee-Copywriting-Kurso.ph_page-0001.jpg" alt="" class="modal-image">
-           <p class="modal-description">Copywriting Certificate</p>
-           <label for="cert-toggle-7" class="modal-close-btn">Close</label>
-         </div>
-       </div>
-
-       <input type="checkbox" id="cert-toggle-8" class="modal-toggle">
-       <div class="modal">
-         <label for="cert-toggle-8" class="modal-overlay"></label>
-         <div class="modal-content cert-modal">
-           <img src="/assets/certificates/KYN-MENDOZA-Graphic-Design-w-Canva-Graphic-Design-w-Canva-Kurso.ph_page-0001.jpg" alt="" class="modal-image">
-           <p class="modal-description">Graphic Design (Canva) Certificate</p>
-           <label for="cert-toggle-8" class="modal-close-btn">Close</label>
-         </div>
-       </div>
-
-       <input type="checkbox" id="cert-toggle-9" class="modal-toggle">
-       <div class="modal">
-         <label for="cert-toggle-9" class="modal-overlay"></label>
-         <div class="modal-content cert-modal">
-           <img src="/assets/certificates/KYN-MENDOZA-Facebook-Ads-AutoPilot-FB-Ads-AutoPilot-Kurso.ph_page-0001.jpg" alt="" class="modal-image">
-           <p class="modal-description">Facebook Ads Autopilot Certificate</p>
-           <label for="cert-toggle-9" class="modal-close-btn">Close</label>
-         </div>
-       </div>
-
-       <!-- I.T Projects -->
-       <section id="it-projects" class="global-padding">
-
-        <div class="wrapper-main">
-
-          <p class="section-text-1">My Recent</p>
-          <h1 class="title">I.T Projects</h1>
-
-          <div class="project-container">
-
-            <div class="project-container-box">
-              <label for="proj-toggle-1">
-                <img src="/assets/projects/project-1.png" alt="project-1-img" class="project-img">
-              </label>
-              <div class="contact-container">
-                <img src="/assets/icons/github.png" alt="linkedin icon" class="icon contact-icon">
-                <p><a href="https://github.com/baekwun/edukista-v2">Edukista - @Baekwun</a></p>
-              </div>
-              <p class="section-text-1">Role: Front-end<br>Developer</p>
-            </div>
-
-            <div class="project-container-box">
-              <label for="proj-toggle-2">
-                <img src="/assets/projects/project-2.png" alt="project-2-img" class="project-img">
-              </label>
-              <div class="contact-container">
-                <img src="/assets/icons/github.png" alt="linkedin icon" class="icon contact-icon">
-                <p><a href="https://github.com/Wasabi199/stickygo">StickyGO - @Wasabi199</a></p>
-              </div>
-              <p class="section-text-1">Role: Project Manager<br>Front-end Developer</p>
-            </div>
-
-            <div class="project-container-box">
-              <label for="proj-toggle-3">
-                <img src="/assets/projects/project-3.png" alt="project-3-img" class="project-img">
-              </label>
-              <div class="contact-container">
-                <img src="/assets/icons/github.png" alt="linkedin icon" class="icon contact-icon">
-                <p><a href="https://github.com/Evanchii/PayPoint">PayPoint - @Evanchii</a></p>
-              </div>
-              <p class="section-text-1">Role: Graphics<br>Design</p>
-            </div>
-
+    <!-- About -->
+    <section id="about" class="global-padding">
+      <div class="wrapper-main">
+        <p class="section-text-1">Learn More</p>
+        <p class="title">About Me</p>
+        <div class="section-container">
+          <div class="section-pic-container">
+            <img
+              src="/assets/profile_pictures/about-pic.png"
+              alt="profile-picture"
+              class="about-pic"
+            />
           </div>
 
-        </div>
-
-       </section>
-
-       <!-- Project 1 Modal (slider ready) -->
-       <input type="checkbox" id="proj-toggle-1" class="modal-toggle">
-       <div class="modal">
-         <label for="proj-toggle-1" class="modal-overlay"></label>
-         <div class="modal-content project-modal">
-           <div class="slider-container">
-             <div class="slider">
-               <img class="slide" src="assets/projects/project-1.png" alt="project1-1">
-               <!-- add more <img class="slide" src="..."> here when you want -->
-             </div>
-             <button class="prev" onclick="changeSlide(-1, 'proj-toggle-1')">&#10094;</button>
-             <button class="next" onclick="changeSlide(1, 'proj-toggle-1')">&#10095;</button>
-           </div>
-           <div class="project-details">
-             <h3>Edukista</h3>
-             <p>Role: Front-end Developer. Completed on: <strong>MM/DD/YYYY</strong></p>
-           </div>
-           <label for="proj-toggle-1" class="modal-close-btn">Close</label>
-         </div>
-       </div>
-
-       <!-- Project 2 Modal (slider ready) -->
-       <input type="checkbox" id="proj-toggle-2" class="modal-toggle">
-       <div class="modal">
-         <label for="proj-toggle-2" class="modal-overlay"></label>
-         <div class="modal-content project-modal">
-           <div class="slider-container">
-             <div class="slider">
-               <img class="slide" src="/assets/projects/project-2.png" alt="project2-1">
-             </div>
-             <button class="prev" onclick="changeSlide(-1, 'proj-toggle-2')">&#10094;</button>
-             <button class="next" onclick="changeSlide(1, 'proj-toggle-2')">&#10095;</button>
-           </div>
-           <div class="project-details">
-             <h3>StickyGO</h3>
-             <p>Role: Project Manager / Front-end Developer. Completed on: <strong>MM/DD/YYYY</strong></p>
-           </div>
-           <label for="proj-toggle-2" class="modal-close-btn">Close</label>
-         </div>
-       </div>
-
-       <!-- Project 3 Modal (slider ready) -->
-       <input type="checkbox" id="proj-toggle-3" class="modal-toggle">
-       <div class="modal">
-         <label for="proj-toggle-3" class="modal-overlay"></label>
-         <div class="modal-content project-modal">
-           <div class="slider-container">
-             <div class="slider">
-               <img class="slide" src="/assets/projects/project-3.png" alt="project3-1">
-             </div>
-             <button class="prev" onclick="changeSlide(-1, 'proj-toggle-3')">&#10094;</button>
-             <button class="next" onclick="changeSlide(1, 'proj-toggle-3')">&#10095;</button>
-           </div>
-           <div class="project-details">
-             <h3>PayPoint</h3>
-             <p>Role: Graphics Design. Completed on: <strong>MM/DD/YYYY</strong></p>
-           </div>
-           <label for="proj-toggle-3" class="modal-close-btn">Close</label>
-         </div>
-       </div>
-
-       <!-- Media Projects (unchanged) -->
-       <section id="media-projects" class="global-padding">
-        <div class="wrapper-main">
-          <p class="section-text-1">My Recent</p>
-          <h1 class="title">Media Projects</h1>
-          <div class="media-container">
-            <div class="video-container">
-              <h3>Capstone Project: Red Band</h3>
-              <p class="section-text-1">Role: Animator</p>
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/SC_pSNtCtd0?si=R5i2Yh4LKj_TLNbG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <div class="about-details-container">
+            <div class="about-containers">
+              <div class="details-container">
+                <i class="fa-solid fa-award fa-2xl"></i>
+                <h3>Experience</h3>
+                <p>
+                  System Administration<br /><br />Frontend Web Developer<br />
+                </p>
+              </div>
+              <div class="details-container">
+                <i class="fa-solid fa-graduation-cap fa-2xl"></i>
+                <h3>Education</h3>
+                <p>
+                  Bachelor of Science in Information Technology
+                  <br /><br />Phinma-University of Pangasinan
+                </p>
+              </div>
             </div>
-
-            <div class="video-container">
-              <h3>Personal Project: Pssst...</h3>
-              <p class="section-text-1">Role: Cast/Producer</p>
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/klzSFXV2tHE?si=LwU4tZidlXQJZEdg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="text-container">
+              <p>
+                I’m an IT graduate currently working as a System Administrator.
+                I have experience in IT support, front-end web development, and
+                hardware work — from building and troubleshooting computers to
+                basic networking. I enjoy exploring different areas of tech and
+                finding creative ways to solve problems.
+              </p>
             </div>
-
-            <div class="video-container">
-              <h3>Personal Project: Nicole Sy @ 18</h3>
-              <p class="section-text-1">Role: Videographer/Editor</p>
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/Lf-lo2dk_6E?si=WeRTTQDGbJnPgk_S" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
-
-            <div class="video-container">
-              <h3>School Project: My Hero</h3>
-              <p class="section-text-1">Role: Videographer/Editor</p>
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/kcix1ZYC_Rc?si=wg4WvOH2QiHhNsSp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
-
-            <div class="video-container">
-              <h3>School Project: Kampo Misteryo</h3>
-              <p class="section-text-1">Role: Videographer/Editor</p>
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/taVhM-JuDvc?si=e_bOWaC97IU9sThj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
-
-            <div class="video-container">
-              <h3>Personal Project: Sta. Barbara Town Plaza 2019</h3>
-              <p class="section-text-1">Role: Videographer/Editor</p>
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/RxDn2kZGgFc?si=LDRqUzbPjRN4M0JL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
-
-            <div class="video-container">
-              <h3>Personal Project: Hangad</h3>
-              <p class="section-text-1">Role: Videographer/Editor</p>
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/FACa2XW32JM?si=i4foEhTFZZzDZtsM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
-
           </div>
         </div>
-       </section>
+      </div>
+    </section>
 
-       <!-- Contact -->
-        <section id="contact" class="global-padding">
-          <div class="wrapper-main">
-            <p class="section-text-1">Get in touch</p>
-            <h1 class="title">Contact Me</h1>
-            <div class="contact-info-container">
-              <div class="contact-container">
-                <img src="/assets/icons/email.png" alt="email icon" class="icon contact-icon email-icon">
-                <p><a href="mailtp:kyme.business@gmail.com">kyme.business@gmail.com</a></p>
-              </div>
-  
-              <div class="contact-container">
-                <img src="/assets/icons/linkedin.png" alt="linkedin icon" class="icon contact-icon">
-                <p><a href="https://www.linkedin.com/in/kynmendoza/">Kyn Mendoza</a></p>
-              </div>
-  
-            </div>
+    <!-- EXPERIENCE (dynamic) -->
+    <section id="experience" class="global-padding">
+      <div class="wrapper-main">
+        <p class="section-text-1">Learn About My</p>
+        <h1 class="title">Experience</h1>
+
+        <div class="experience-details-container">
+          <div class="experience-container" id="experience-container">
+            <!-- items injected by JS -->
           </div>
-        </section>
+        </div>
+      </div>
+    </section>
 
-     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- CERTIFICATES (dynamic) -->
+    <section id="certificates" class="global-padding">
+      <div class="wrapper-main">
+        <p class="section-text-1">Check Out My</p>
+        <h1 class="title">Certificates</h1>
 
-<script src="theme.js"></script>
+        <div class="cert-container" id="cert-container">
+          <!-- certificate thumbnails injected by JS -->
+        </div>
+      </div>
+    </section>
 
-<footer>
-  <p>Copyright &#169; 2024 Kyn Mendoza. <br />All Rights Reserved.</p>
-</footer>
+    <!-- PROJECTS (dynamic) -->
+    <section id="it-projects" class="global-padding">
+      <div class="wrapper-main">
+        <p class="section-text-1">My Recent</p>
+        <h1 class="title">I.T Projects</h1>
 
-</body>
+        <div class="project-container" id="project-container">
+          <!-- project boxes injected by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- MODAL CONTAINER (JS will create modals here) -->
+    <div id="modal-container"></div>
+
+    <!-- MEDIA SECTION (dynamic - YouTube embeds) -->
+    <section id="media-projects" class="global-padding">
+      <div class="wrapper-main">
+        <p class="section-text-1">My Recent</p>
+        <h1 class="title">Media Projects</h1>
+        <div class="media-container" id="media-container">
+          <!-- video items injected by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="global-padding">
+      <div class="wrapper-main">
+        <p class="section-text-1">Get in touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-container">
+          <div class="contact-container">
+            <img
+              src="/assets/icons/email.png"
+              alt="email icon"
+              class="icon contact-icon email-icon"
+            />
+            <p>
+              <a href="mailto:kyme.business@gmail.com"
+                >kyme.business@gmail.com</a
+              >
+            </p>
+          </div>
+
+          <div class="contact-container">
+            <img
+              src="/assets/icons/linkedin.png"
+              alt="linkedin icon"
+              class="icon contact-icon"
+            />
+            <p>
+              <a href="https://www.linkedin.com/in/kynmendoza/">Kyn Mendoza</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>Copyright &#169; 2024 Kyn Mendoza. <br />All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+  </body>
 </html>
