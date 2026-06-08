@@ -3,35 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kyn Mendoza | Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="assets/logo/KYME-logo.ico" />
+    <script src="https://kit.fontawesome.com/aa83f0c211.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="home.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
-    <!-- Light mode favicon (default) -->
-    <link
-      rel="icon"
-      id="favicon"
-      type="image/x-icon"
-      href="assets/logo/kyme-logo.ico"
-    />
-    <script
-      src="https://kit.fontawesome.com/aa83f0c211.js"
-      crossorigin="anonymous"
-    ></script>
-    <title>Kyn Mendoza</title>
   </head>
   <body>
+
     <!-- Navigation -->
     <nav id="desktop-nav">
       <div>
         <a href="#profile">
-          <img
-            id="site-logo"
-            src="assets/logo/kyme-logo-light.svg"
-            alt="Logo"
-            class="logo"
-          />
+          <img id="logo-light" class="logo logo-img" src="assets/logo/kyme-logo-light.svg" alt="Kyn Mendoza Logo" />
+          <img id="logo-dark"  class="logo logo-img" src="assets/logo/kyme-logo-dark.svg"  alt="Kyn Mendoza Logo" />
         </a>
       </div>
-
       <div>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
@@ -39,10 +26,33 @@
           <li><a href="#certificates">Certificates</a></li>
           <li><a href="#it-projects">I.T Projects</a></li>
           <li><a href="#media-projects">Media Projects</a></li>
+          <li><a href="#art-projects">Art</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
     </nav>
+
+    <!-- Mobile Navigation -->
+    <nav id="mobile-nav">
+      <a href="#profile">
+        <img id="mobile-logo-light" class="logo-img" src="assets/logo/kyme-logo-light.svg" alt="Kyn Mendoza Logo" />
+        <img id="mobile-logo-dark"  class="logo-img" src="assets/logo/kyme-logo-dark.svg"  alt="Kyn Mendoza Logo" />
+      </a>
+      <button id="hamburger" class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+    <div id="mobile-menu" class="mobile-menu" aria-hidden="true">
+      <ul>
+        <li><a href="#about"          onclick="closeMobileMenu()">About</a></li>
+        <li><a href="#experience"     onclick="closeMobileMenu()">Experience</a></li>
+        <li><a href="#certificates"   onclick="closeMobileMenu()">Certificates</a></li>
+        <li><a href="#it-projects"    onclick="closeMobileMenu()">I.T Projects</a></li>
+        <li><a href="#media-projects" onclick="closeMobileMenu()">Media Projects</a></li>
+        <li><a href="#art-projects"   onclick="closeMobileMenu()">Art</a></li>
+        <li><a href="#contact"        onclick="closeMobileMenu()">Contact</a></li>
+      </ul>
+    </div>
 
     <button id="theme-toggle" class="theme-btn" aria-label="Toggle dark mode">
       <i class="fa-solid fa-moon"></i>
@@ -52,39 +62,21 @@
     <section id="profile" class="global-padding">
       <div class="wrapper-main global-flex">
         <div class="section-pic-container">
-          <img
-            src="./assets/profile_pictures/profile-pic.png"
-            alt="profile-picture"
-          />
+          <img id="profile-pic" src="assets/profile_pictures/profile-pic.png" alt="Kyn Mendoza" />
         </div>
-
         <div class="section-text-container">
           <p class="section-text-1">Hello, I'm</p>
-
           <h1 class="title">Kyn Mendoza</h1>
-
           <p class="section-text-2"><span id="element"></span></p>
-
-          <button
-            class="btn"
-            onclick="window.open('https://drive.google.com/file/d/1M3cQHsGonr80Yf9zeG-gwDSUfAeZ_yzO/view?usp=sharing')"
-          >
+          <button class="btn"
+            onclick="window.open('https://drive.google.com/file/d/1M3cQHsGonr80Yf9zeG-gwDSUfAeZ_yzO/view?usp=sharing')">
             Download CV
           </button>
-
           <div class="socials-container">
-            <img
-              src="./assets/icons/linkedin.png"
-              alt="linkedin profile"
-              class="icon"
-              onclick="location.href='https://www.linkedin.com/in/kynmendoza'"
-            />
-            <img
-              src="./assets/icons/github.png"
-              alt="github profile"
-              class="icon"
-              onclick="location.href='https://github.com/baekwun'"
-            />
+            <img class="icon" src="assets/icons/linkedin.png" alt="LinkedIn"
+              onclick="location.href='https://www.linkedin.com/in/kynmendoza'" />
+            <img class="icon" src="assets/icons/github.png" alt="GitHub"
+              onclick="location.href='https://github.com/baekwun'" />
           </div>
         </div>
       </div>
@@ -94,41 +86,32 @@
     <section id="about" class="global-padding">
       <div class="wrapper-main">
         <p class="section-text-1">Learn More</p>
-        <p class="title">About Me</p>
+        <h1 class="title">About Me</h1>
         <div class="section-container">
           <div class="section-pic-container">
-            <img
-              src="/assets/profile_pictures/about-pic.png"
-              alt="profile-picture"
-              class="about-pic"
-            />
+            <img id="about-pic" class="about-pic" src="assets/profile_pictures/about-pic.png" alt="About Kyn Mendoza" />
           </div>
-
           <div class="about-details-container">
             <div class="about-containers">
               <div class="details-container">
                 <i class="fa-solid fa-award fa-2xl"></i>
                 <h3>Experience</h3>
-                <p>
-                  System Administration<br /><br />Frontend Web Developer<br />
-                </p>
+                <p>System Administration<br /><br />Frontend Web Developer</p>
               </div>
               <div class="details-container">
                 <i class="fa-solid fa-graduation-cap fa-2xl"></i>
                 <h3>Education</h3>
-                <p>
-                  Bachelor of Science in Information Technology
-                  <br /><br />Phinma-University of Pangasinan
-                </p>
+                <p>Bachelor of Science in Information Technology<br /><br />Phinma-University of Pangasinan</p>
               </div>
             </div>
             <div class="text-container">
               <p>
-                I’m an IT graduate currently working as a System Administrator.
-                I have experience in IT support, front-end web development, and
-                hardware work — from building and troubleshooting computers to
-                basic networking. I enjoy exploring different areas of tech and
-                finding creative ways to solve problems.
+                I'm an IT graduate currently working as a System Administrator and MIS developer.
+                I specialize in IT support, system administration, and building internal tools —
+                from configuring servers and troubleshooting networks to developing full-stack
+                web applications for real business workflows.
+                My background in multimedia and design lets me communicate technical ideas
+                clearly and build systems that are not just functional, but easy to use.
               </p>
             </div>
           </div>
@@ -136,55 +119,52 @@
       </div>
     </section>
 
-    <!-- EXPERIENCE (dynamic) -->
+    <!-- Experience -->
     <section id="experience" class="global-padding">
       <div class="wrapper-main">
         <p class="section-text-1">Learn About My</p>
         <h1 class="title">Experience</h1>
-
         <div class="experience-details-container">
-          <div class="experience-container" id="experience-container">
-            <!-- items injected by JS -->
-          </div>
+          <div class="experience-container" id="experience-container"></div>
         </div>
       </div>
     </section>
 
-    <!-- CERTIFICATES (dynamic) -->
+    <!-- Certificates -->
     <section id="certificates" class="global-padding">
       <div class="wrapper-main">
         <p class="section-text-1">Check Out My</p>
         <h1 class="title">Certificates</h1>
-
-        <div class="cert-container" id="cert-container">
-          <!-- certificate thumbnails injected by JS -->
-        </div>
+        <div class="cert-container" id="cert-container"></div>
       </div>
     </section>
 
-    <!-- PROJECTS (dynamic) -->
+    <!-- I.T Projects -->
     <section id="it-projects" class="global-padding">
       <div class="wrapper-main">
         <p class="section-text-1">My Recent</p>
         <h1 class="title">I.T Projects</h1>
-
-        <div class="project-container" id="project-container">
-          <!-- project boxes injected by JS -->
-        </div>
+        <div class="project-container" id="project-container"></div>
       </div>
     </section>
 
-    <!-- MODAL CONTAINER (JS will create modals here) -->
     <div id="modal-container"></div>
 
-    <!-- MEDIA SECTION (dynamic - YouTube embeds) -->
+    <!-- Media Projects -->
     <section id="media-projects" class="global-padding">
       <div class="wrapper-main">
         <p class="section-text-1">My Recent</p>
         <h1 class="title">Media Projects</h1>
-        <div class="media-container" id="media-container">
-          <!-- video items injected by JS -->
-        </div>
+        <div class="media-container" id="media-container"></div>
+      </div>
+    </section>
+
+    <!-- Art Projects -->
+    <section id="art-projects" class="global-padding">
+      <div class="wrapper-main">
+        <p class="section-text-1">My Creative</p>
+        <h1 class="title">Art &amp; Illustrations</h1>
+        <div class="art-grid" id="art-container"></div>
       </div>
     </section>
 
@@ -195,27 +175,14 @@
         <h1 class="title">Contact Me</h1>
         <div class="contact-info-container">
           <div class="contact-container">
-            <img
-              src="/assets/icons/email.png"
-              alt="email icon"
-              class="icon contact-icon email-icon"
-            />
-            <p>
-              <a href="mailto:kyme.business@gmail.com"
-                >kyme.business@gmail.com</a
-              >
-            </p>
+            <img class="icon contact-icon email-icon"
+              src="assets/icons/email.png" alt="Email" />
+            <p><a href="mailto:kyme.business@gmail.com">kyme.business@gmail.com</a></p>
           </div>
-
           <div class="contact-container">
-            <img
-              src="/assets/icons/linkedin.png"
-              alt="linkedin icon"
-              class="icon contact-icon"
-            />
-            <p>
-              <a href="https://www.linkedin.com/in/kynmendoza/">Kyn Mendoza</a>
-            </p>
+            <img class="icon contact-icon"
+              src="assets/icons/linkedin.png" alt="LinkedIn" />
+            <p><a href="https://www.linkedin.com/in/kynmendoza/" target="_blank" rel="noopener">Kyn Mendoza</a></p>
           </div>
         </div>
       </div>
@@ -227,5 +194,76 @@
 
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="script.js"></script>
+    <script>
+      // Load portfolio data then initialise
+      fetch('data/portfolio.json')
+        .then(function(r) { return r.json(); })
+        .then(function(data) { initPortfolio(data); })
+        .catch(function(err) { console.error('Failed to load portfolio data', err); });
+
+      // Typed.js
+      if (typeof Typed !== 'undefined' && document.getElementById('element')) {
+        new Typed('#element', {
+          strings: ['System Administrator', 'Front-end Designer', 'Video Editor', 'Graphics Designer'],
+          typeSpeed: 50,
+          loop: true
+        });
+      }
+
+      // Theme toggle
+      (function () {
+        var toggleBtn = document.getElementById('theme-toggle');
+        var body      = document.body;
+
+        function applyTheme(dark) {
+          body.classList.toggle('dark-mode', dark);
+          var ll = document.getElementById('logo-light');
+          var ld = document.getElementById('logo-dark');
+          var mll = document.getElementById('mobile-logo-light');
+          var mld = document.getElementById('mobile-logo-dark');
+          if (ll)  ll.style.display  = dark ? 'none'  : 'block';
+          if (ld)  ld.style.display  = dark ? 'block' : 'none';
+          if (mll) mll.style.display = dark ? 'none'  : 'block';
+          if (mld) mld.style.display = dark ? 'block' : 'none';
+          var i = toggleBtn && toggleBtn.querySelector('i');
+          if (i) {
+            i.classList.toggle('fa-moon', !dark);
+            i.classList.toggle('fa-sun',   dark);
+          }
+        }
+
+        var isDark = localStorage.getItem('theme') !== 'light';
+        applyTheme(isDark);
+
+        if (toggleBtn) {
+          toggleBtn.addEventListener('click', function () {
+            isDark = !isDark;
+            applyTheme(isDark);
+            localStorage.setItem('theme', isDark ? 'dark' : 'light');
+          });
+        }
+      })();
+      // Hamburger menu
+      (function () {
+        var hamburger  = document.getElementById('hamburger');
+        var mobileMenu = document.getElementById('mobile-menu');
+        if (!hamburger || !mobileMenu) return;
+
+        hamburger.addEventListener('click', function () {
+          var isOpen = mobileMenu.classList.toggle('open');
+          hamburger.classList.toggle('open', isOpen);
+          hamburger.setAttribute('aria-expanded', isOpen);
+          mobileMenu.setAttribute('aria-hidden', !isOpen);
+        });
+      })();
+
+      function closeMobileMenu() {
+        var hamburger  = document.getElementById('hamburger');
+        var mobileMenu = document.getElementById('mobile-menu');
+        if (mobileMenu) { mobileMenu.classList.remove('open'); mobileMenu.setAttribute('aria-hidden', 'true'); }
+        if (hamburger)  { hamburger.classList.remove('open');  hamburger.setAttribute('aria-expanded', 'false'); }
+      }
+    </script>
+
   </body>
 </html>

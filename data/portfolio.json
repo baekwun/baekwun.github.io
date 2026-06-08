@@ -50,7 +50,7 @@
         {
           "subtitle": "Technical Support",
           "bullets": [
-            "Provided IT support for the company’s system, ensuring smooth operations.",
+            "Provided IT support for the company's system, ensuring smooth operations.",
             "Resolved software and hardware issues and maintained network connectivity."
           ],
           "skills": "FileZilla · Microsoft Office · Google Workspace"
@@ -58,129 +58,115 @@
       ]
     }
   ],
+
   "certificates": [
     {
       "id": "cert-1",
       "title": "Videography and Photography Certificate",
-      "image": "/assets/certificates/KYN-MENDOZA-Videography-and-Photography-Certificate.jpg",
+      "src": "assets/certificates/KYN-MENDOZA-Videography-and-Photography-Certificate.jpg",
       "description": "Videography and Photography Certificate"
     },
     {
       "id": "cert-2",
       "title": "Capstone Certificate",
-      "image": "/assets/certificates/KYN-MENDOZA-Capstone-Certificate.jpg",
+      "src": "assets/certificates/KYN-MENDOZA-Capstone-Certificate.jpg",
       "description": "Capstone Certificate"
     },
     {
       "id": "cert-3",
       "title": "DISAT Internship Program Certificate",
-      "image": "/assets/certificates/KYN-MENDOZA-DISAT-Inernship-Program-Certificate.jpg",
+      "src": "assets/certificates/KYN-MENDOZA-DISAT-Inernship-Program-Certificate.jpg",
       "description": "DISAT Internship Program Certificate"
     },
     {
       "id": "cert-4",
       "title": "Become A Virtual Assistant (1-week)",
-      "image": "/assets/certificates/kyme.mendoza-Become-A-Virtual-Assistant-In-A-Week-Become-A-Virtual-Assistant-In-1-Week-Learn-Freelancing-With-Angel_page-0001.jpg",
-      "description": "Become a Virtual Assistant (1-week) Certificate"
+      "src": "assets/certificates/kyme.mendoza-Become-A-Virtual-Assistant-In-A-Week-Become-A-Virtual-Assistant-In-1-Week-Learn-Freelancing-With-Angel_page-0001.jpg",
+      "description": "Become a Virtual Assistant Certificate"
     },
     {
       "id": "cert-5",
       "title": "WordPress and Marketing Certificate",
-      "image": "/assets/certificates/KYN-MENDOZA-WordPress-and-Marketing-WordPress-and-Marketing-Kurso.ph_page-0001.jpg",
+      "src": "assets/certificates/KYN-MENDOZA-WordPress-and-Marketing-WordPress-and-Marketing-Kurso.ph_page-0001.jpg",
       "description": "WordPress and Marketing Certificate"
     },
     {
       "id": "cert-6",
       "title": "Social Media Management Certificate",
-      "image": "/assets/certificates/KYN-MENDOZA-Social-Media-Management-Social-Media-Management-Kurso.ph_page-0001.jpg",
+      "src": "assets/certificates/KYN-MENDOZA-Social-Media-Management-Social-Media-Management-Kurso.ph_page-0001.jpg",
       "description": "Social Media Management Certificate"
     },
     {
       "id": "cert-7",
       "title": "Copywriting Certificate",
-      "image": "/assets/certificates/KYN-MENDOZA-Copywriting-Coffee-Copywriting-Kurso.ph_page-0001.jpg",
+      "src": "assets/certificates/KYN-MENDOZA-Copywriting-Coffee-Copywriting-Kurso.ph_page-0001.jpg",
       "description": "Copywriting Certificate"
     },
     {
       "id": "cert-8",
       "title": "Graphic Design (Canva) Certificate",
-      "image": "/assets/certificates/KYN-MENDOZA-Graphic-Design-w-Canva-Graphic-Design-w-Canva-Kurso.ph_page-0001.jpg",
+      "src": "assets/certificates/KYN-MENDOZA-Graphic-Design-w-Canva-Graphic-Design-w-Canva-Kurso.ph_page-0001.jpg",
       "description": "Graphic Design (Canva) Certificate"
     },
     {
       "id": "cert-9",
       "title": "Facebook Ads Autopilot Certificate",
-      "image": "/assets/certificates/KYN-MENDOZA-Facebook-Ads-AutoPilot-FB-Ads-AutoPilot-Kurso.ph_page-0001.jpg",
+      "src": "assets/certificates/KYN-MENDOZA-Facebook-Ads-AutoPilot-FB-Ads-AutoPilot-Kurso.ph_page-0001.jpg",
       "description": "Facebook Ads Autopilot Certificate"
     }
   ],
+
   "projects": [
     {
       "id": "proj-1",
       "title": "Edukista",
-      "thumb": "/assets/projects/project-1.png",
-      "images": ["/assets/projects/project-1.png"],
+      "src": "assets/projects/project-1.png",
       "github": "https://github.com/baekwun/edukista-v2",
       "role": "Front-end Developer",
-      "completed": "03/17/2023",
-      "details": "Description: "
+      "details": "Description coming soon."
     },
     {
       "id": "proj-2",
       "title": "StickyGO",
-      "thumb": "/assets/projects/project-2.png",
-      "images": ["/assets/projects/project-2.png"],
+      "src": "assets/projects/project-2.png",
       "github": "https://github.com/Wasabi199/stickygo",
       "role": "Project Manager · Front-end Developer",
-      "completed": "",
-      "details": "Description: "
+      "details": "Description coming soon."
     },
     {
       "id": "proj-3",
       "title": "PayPoint",
-      "thumb": "/assets/projects/project-3.png",
-      "images": ["/assets/projects/project-3.png"],
+      "src": "assets/projects/project-3.png",
       "github": "https://github.com/Evanchii/PayPoint",
       "role": "Graphics Design",
-      "completed": "",
-      "details": "Description: "
+      "details": "Description coming soon."
+    },
+    {
+      "id": "proj-4",
+      "title": "GATIS (Guanzon Auto-Group Ticketing & Information System)",
+      "src": "",
+      "github": "#",
+      "role": "Developer · System Administrator",
+      "details": "A full-stack internal ticketing platform for the MIS Department of Guanzon Auto Group, built entirely on Google Apps Script. Manages three request types — Adjustment Requests, System Access Requests, and Service Requests — across 12 branches. Key features include automated ticket number generation, HTML email notifications with live approval detection via Gmail, a public-facing request portal for branch employees, role-based support assignment with aging calculations, monthly data archiving to Google Drive, and a real-time stats dashboard with branch and workload analytics. Still actively maintained and improved."
     }
   ],
+
   "media": [
-    {
-      "title": "Capstone Project: Red Band",
-      "role": "Animator",
-      "embed": "https://www.youtube.com/embed/SC_pSNtCtd0?si=R5i2Yh4LKj_TLNbG"
-    },
-    {
-      "title": "Personal Project: Pssst...",
-      "role": "Cast/Producer",
-      "embed": "https://www.youtube.com/embed/klzSFXV2tHE?si=LwU4tZidlXQJZEdg"
-    },
-    {
-      "title": "Personal Project: Nicole Sy @ 18",
-      "role": "Videographer/Editor",
-      "embed": "https://www.youtube.com/embed/Lf-lo2dk_6E?si=WeRTTQDGbJnPgk_S"
-    },
-    {
-      "title": "School Project: My Hero",
-      "role": "Videographer/Editor",
-      "embed": "https://www.youtube.com/embed/kcix1ZYC_Rc?si=wg4WvOH2QiHhNsSp"
-    },
-    {
-      "title": "School Project: Kampo Misteryo",
-      "role": "Videographer/Editor",
-      "embed": "https://www.youtube.com/embed/taVhM-JuDvc?si=e_bOWaC97IU9sThj"
-    },
-    {
-      "title": "Personal Project: Sta. Barbara Town Plaza 2019",
-      "role": "Videographer/Editor",
-      "embed": "https://www.youtube.com/embed/RxDn2kZGgFc?si=LDRqUzbPjRN4M0JL"
-    },
-    {
-      "title": "Personal Project: Hangad",
-      "role": "Videographer/Editor",
-      "embed": "https://www.youtube.com/embed/FACa2XW32JM?si=i4foEhTFZZzDZtsM"
-    }
+    { "title": "Capstone Project: Red Band",          "role": "Animator",           "embed": "https://www.youtube.com/embed/SC_pSNtCtd0" },
+    { "title": "Personal Project: Pssst...",          "role": "Cast/Producer",       "embed": "https://www.youtube.com/embed/klzSFXV2tHE" },
+    { "title": "Personal Project: Nicole Sy @ 18",    "role": "Videographer/Editor", "embed": "https://www.youtube.com/embed/Lf-lo2dk_6E" },
+    { "title": "School Project: My Hero",             "role": "Videographer/Editor", "embed": "https://www.youtube.com/embed/kcix1ZYC_Rc" },
+    { "title": "School Project: Kampo Misteryo",      "role": "Videographer/Editor", "embed": "https://www.youtube.com/embed/taVhM-JuDvc" },
+    { "title": "Personal Project: Sta. Barbara 2019", "role": "Videographer/Editor", "embed": "https://www.youtube.com/embed/RxDn2kZGgFc" },
+    { "title": "Personal Project: Hangad",            "role": "Videographer/Editor", "embed": "https://www.youtube.com/embed/FACa2XW32JM" }
+  ],
+
+  "art": [
+    { "id": "art-1", "title": "Artwork Title 1", "src": "https://via.placeholder.com/400x400?text=Art+1", "medium": "Digital Illustration", "year": "2024" },
+    { "id": "art-2", "title": "Artwork Title 2", "src": "https://via.placeholder.com/400x400?text=Art+2", "medium": "Digital Illustration", "year": "2024" },
+    { "id": "art-3", "title": "Artwork Title 3", "src": "https://via.placeholder.com/400x400?text=Art+3", "medium": "Digital Illustration", "year": "2023" },
+    { "id": "art-4", "title": "Artwork Title 4", "src": "https://via.placeholder.com/400x400?text=Art+4", "medium": "Graphic Design",       "year": "2023" },
+    { "id": "art-5", "title": "Artwork Title 5", "src": "https://via.placeholder.com/400x400?text=Art+5", "medium": "Digital Illustration", "year": "2023" },
+    { "id": "art-6", "title": "Artwork Title 6", "src": "https://via.placeholder.com/400x400?text=Art+6", "medium": "Graphic Design",       "year": "2022" }
   ]
 }

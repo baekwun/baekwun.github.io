@@ -1,262 +1,65 @@
-/* Media Query for Mobile Devices */
+/* Mobile */
 @media (max-width: 480px) {
-    #desktop-nav{
-        display: none;
-    }
-
-    #profile {
-        margin-top: 0;
-    }
-
-    .global-flex {
-        display: flex;
-        column-gap: 60px;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .section-pic-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        height: auto;
-    }
-
-    .wrapper-main{
-        width: 300px;
-    }
-
-    .about-containers, .about-details-container {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .section-container {
-        display: flex;
-        gap: 1rem;
-        height: 80%;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .contact-info-container {
-        width: 300px;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-    }
-
-    iframe{
-        width: 280px;
-        height: 157px;
-    }
-
-    .media-container {
-        display: flex;
-        flex-wrap: nowrap;
-        justify-content: center;
-        align-content: center;
-        flex-direction: column;
-        align-items: stretch;
-    }
-
-    /* Project images mobile */
-    .project-container {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 1rem;
-        justify-items: center;
-        align-items: start;
-        padding: 1rem;
-    }
-
-    .project-img {
-        width: 100%;
-        max-width: 300px;
-    }
-}
-
-/* Media Query for low resolution Tablets, Ipads */
-@media (min-width: 481px) and (max-width: 767px) {
-    #desktop-nav{
-        display: none;
-    }
-
-    #profile {
-        margin-top: 0;
-    }
-
-    .global-flex {
-        display: flex;
-        column-gap: 60px;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .section-pic-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        height: auto;
-    }
-
-    .wrapper-main{
-        width: 400px;
-    }
-
-    .about-containers, .about-details-container {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .section-container {
-        display: flex;
-        gap: 1rem;
-        height: 80%;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .contact-info-container {
-        width: 400px;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-    }
-
-    iframe{
-        width: 280px;
-        height: 157px;
-    }
-
-    .media-container {
-        display: flex;
-        flex-wrap: nowrap;
-        justify-content: center;
-        align-content: center;
-        flex-direction: column;
-        align-items: stretch;
-    }
-
-    /* Project images small tablets */
-    .project-container {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1.5rem;
-        justify-items: center;
-        align-items: start;
-        padding: 1rem;
-    }
-
-    .project-img {
-        width: 100%;
-        max-width: 300px;
-    }
-}
-
-/* Media Query for Tablets Ipads portrait mode */
-@media (min-width: 768px) and (max-width: 1024px) {
-    #desktop-nav{
-        display: none;
-    }
-
-    #profile {
-        margin-top: 0;
-    }
-
-    .global-flex {
-        display: flex;
-        column-gap: 60px;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .section-pic-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        height: auto;
-    }
-
-    .wrapper-main{
-        width: 600px;
-    }
-
-    .about-containers, .about-details-container {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .section-container {
-        display: flex;
-        gap: 1rem;
-        height: 80%;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    /* Project images tablets */
-    .project-container {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1.5rem;
-        justify-items: center;
-        align-items: start;
-        padding: 1rem;
-    }
-
-    .project-img {
-        width: 100%;
-        max-width: 400px;
-    }
-}
-
-/* Media Query for Laptops and Desktops */
-@media (min-width: 1025px) and (max-width: 1280px) {
-    /* Project images desktop */
-    .project-container {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 2rem;
-        justify-items: center;
-        align-items: start;
-        padding: 1rem;
-    }
-
-    .project-img {
-        width: 100%;
-        max-width: 500px;
-    }
-}
-
-/* Media Query for Large screens
-@media (min-width: 1281px) {
-    body {
-        
-    }
-} */
-
-@media (max-width: 768px) {
-  .project-modal, .cert-modal {
-    max-width: 90%;
-    padding: 15px;
-  }
-  .slider { width: 100%; max-width: 100%; }
-    .details-container {
-    padding: 1.2rem 1.5rem;
-  }
-  .details-container {
-    padding: 1.5rem 1.2rem;
-  }
-  .experience-sub-title {
-    font-size: 1.25rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .thumbnail { width: 150px; }
+  #desktop-nav { display: none; }
+  #mobile-nav  { display: flex; }
+  #profile { margin-top: 70px; }
+  .global-flex { flex-direction: column; justify-content: center; align-items: center; column-gap: 0; gap: 1.5rem; }
+  .section-pic-container { flex-direction: column; align-items: center; height: auto; width: auto; }
+  .wrapper-main { padding: 1.25rem; }
+  .about-containers, .about-details-container { flex-direction: column; }
+  .section-container { flex-direction: column; align-items: center; gap: 1rem; height: auto; }
+  .contact-info-container { width: 100%; flex-direction: column; }
+  iframe { width: 100%; max-width: 100%; height: 180px; }
+  .media-container { align-items: stretch; padding: 0.5rem; }
+  .project-container { grid-template-columns: 1fr; gap: 1rem; }
+  .art-grid { grid-template-columns: 1fr; }
+  .cert-container { grid-template-columns: 1fr; }
   .modal-close-btn { padding: 8px 16px; }
+  .section-text-2 { font-size: 1.25rem; }
+}
+
+/* Small Tablets */
+@media (min-width: 481px) and (max-width: 767px) {
+  #desktop-nav { display: none; }
+  #mobile-nav  { display: flex; }
+  #profile { margin-top: 70px; }
+  .global-flex { flex-direction: column; justify-content: center; align-items: center; column-gap: 0; gap: 1.5rem; }
+  .section-pic-container { flex-direction: column; align-items: center; height: auto; width: auto; }
+  .wrapper-main { padding: 2rem; }
+  .about-containers, .about-details-container { flex-direction: column; }
+  .section-container { flex-direction: column; align-items: center; gap: 1rem; height: auto; }
+  .contact-info-container { width: 100%; flex-direction: column; }
+  iframe { width: 100%; max-width: 100%; height: 236px; }
+  .project-container { grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
+  .art-grid { grid-template-columns: repeat(2, 1fr); }
+  .cert-container { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* Tablets Portrait */
+@media (min-width: 768px) and (max-width: 1024px) {
+  #desktop-nav { display: none; }
+  #mobile-nav  { display: flex; }
+  #profile { margin-top: 70px; }
+  .global-flex { flex-direction: column; justify-content: center; align-items: center; }
+  .section-pic-container { flex-direction: column; align-items: center; height: auto; }
+  .wrapper-main { padding: 2rem; }
+  .about-containers, .about-details-container { flex-direction: column; }
+  .section-container { flex-direction: column; align-items: center; gap: 1rem; height: auto; }
+  .project-container { grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
+  .art-grid { grid-template-columns: repeat(2, 1fr); }
+  .cert-container { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* Laptops */
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .project-container { grid-template-columns: repeat(3, 1fr); gap: 2rem; }
+  .art-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+/* Modals on small screens */
+@media (max-width: 768px) {
+  .project-modal, .cert-modal, .art-modal { max-width: 90%; padding: 15px; }
+  .slider { width: 100%; max-width: 100%; }
+  .details-container { padding: 1.2rem 1.5rem; }
+  .experience-sub-title { font-size: 1.25rem; }
 }
