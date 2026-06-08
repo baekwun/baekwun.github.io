@@ -11,6 +11,9 @@
   </head>
   <body>
 
+    <!-- Animated contour background canvas -->
+    <canvas id="contour-bg"></canvas>
+
     <!-- Navigation -->
     <nav id="desktop-nav">
       <div>
@@ -195,13 +198,61 @@
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="script.js"></script>
     <script>
-      // Load portfolio data then initialise
+      // ── CONTOUR BACKGROUND ──────────────────────────────────────────────
+      (function () {
+        var canvas = document.getElementById('contour-bg');
+        var ctx = canvas.getContext('2d');
+        var W, H, t = 0, raf;
+
+        function resize() {
+          W = canvas.width  = window.innerWidth;
+          H = canvas.height = window.innerHeight;
+        }
+        window.addEventListener('resize', resize);
+        resize();
+
+        // Layered sine noise — smooth, no tiling
+        function noise(x, y, t) {
+          return (
+            Math.sin(x * 0.007  + t * 0.38) * 0.42 +
+            Math.sin(x * 0.013  - y * 0.005 + t * 0.22) * 0.32 +
+            Math.sin(y * 0.011  + t * 0.31) * 0.26
+          );
+        }
+
+        function draw() {
+          ctx.clearRect(0, 0, W, H);
+          var dark    = document.body.classList.contains('dark-mode');
+          var opacity = dark ? 0.12 : 0.18;
+          var color   = dark ? '170,170,170' : '80,80,80';
+          var lines   = 16;
+
+          for (var i = 0; i < lines; i++) {
+            var baseY = (i / (lines - 1)) * H;
+            ctx.beginPath();
+            ctx.strokeStyle = 'rgba(' + color + ',' + opacity + ')';
+            ctx.lineWidth = 1.2;
+            for (var x = 0; x <= W; x += 3) {
+              var y = baseY + noise(x, baseY, t) * 65;
+              x === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
+            }
+            ctx.stroke();
+          }
+
+          t += 0.007;
+          raf = requestAnimationFrame(draw);
+        }
+
+        draw();
+      })();
+
+      // ── PORTFOLIO DATA ──────────────────────────────────────────────────
       fetch('data/portfolio.json')
         .then(function(r) { return r.json(); })
         .then(function(data) { initPortfolio(data); })
         .catch(function(err) { console.error('Failed to load portfolio data', err); });
 
-      // Typed.js
+      // ── TYPED.JS ────────────────────────────────────────────────────────
       if (typeof Typed !== 'undefined' && document.getElementById('element')) {
         new Typed('#element', {
           strings: ['System Administrator', 'Front-end Designer', 'Video Editor', 'Graphics Designer'],
@@ -210,15 +261,15 @@
         });
       }
 
-      // Theme toggle
+      // ── THEME TOGGLE ────────────────────────────────────────────────────
       (function () {
         var toggleBtn = document.getElementById('theme-toggle');
         var body      = document.body;
 
         function applyTheme(dark) {
           body.classList.toggle('dark-mode', dark);
-          var ll = document.getElementById('logo-light');
-          var ld = document.getElementById('logo-dark');
+          var ll  = document.getElementById('logo-light');
+          var ld  = document.getElementById('logo-dark');
           var mll = document.getElementById('mobile-logo-light');
           var mld = document.getElementById('mobile-logo-dark');
           if (ll)  ll.style.display  = dark ? 'none'  : 'block';
@@ -243,7 +294,8 @@
           });
         }
       })();
-      // Hamburger menu
+
+      // ── HAMBURGER MENU ──────────────────────────────────────────────────
       (function () {
         var hamburger  = document.getElementById('hamburger');
         var mobileMenu = document.getElementById('mobile-menu');
