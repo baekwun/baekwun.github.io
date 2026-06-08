@@ -348,6 +348,21 @@ iframe {
 .art-card-info h3 { font-size: 0.95rem; font-weight: 600; color: #222; margin-bottom: 0.2rem; }
 .art-card-info p  { font-size: 0.8rem; color: #888; margin: 0; }
 
+/* ── SNAPWIDGET ──────────────────────────────────────────────────────── */
+.snapwidget-container {
+  width: 100%;
+  border-radius: 1rem;
+  overflow: hidden;
+  border: rgb(163,163,163) 0.1rem solid;
+  margin-top: 1.5rem;
+}
+
+.snapwidget-widget {
+  display: block;
+  width: 100% !important;
+  min-height: 500px;
+}
+
 /* Contact */
 .contact-info-container {
   width: 600px;
