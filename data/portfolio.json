@@ -58,7 +58,6 @@
       ]
     }
   ],
-
   "certificates": [
     {
       "id": "cert-1",
@@ -115,8 +114,35 @@
       "description": "Facebook Ads Autopilot Certificate"
     }
   ],
-
   "projects": [
+    {
+      "id": "proj-5",
+      "title": "SpendSense — Pocket Finance Tracker",
+      "src": "",
+      "placeholder": "#4f8ef7",
+      "github": "https://github.com/baekwun/SpendSense",
+      "role": "Solo Developer",
+      "details": "A personal finance PWA built with vanilla HTML, CSS, and JavaScript — no frameworks, no dependencies. Tracks income and expenses by category, computes Philippine payslip net pay with standard deductions, and automatically splits income across named savings buckets by percentage. Includes donut and bar charts for spending breakdowns, offline-first storage via IndexedDB, and background sync to Supabase when internet is restored. Installable on Android and iOS as a full-screen PWA."
+    },
+    {
+      "id": "proj-4",
+      "title": "GATIS (Guanzon Auto-Group Ticketing & Information System)",
+      "src": "",
+      "placeholder": "#e07b39",
+      "github": "https://github.com/baekwun/GATIS",
+      "githubExtra": [
+        {
+          "label": "Auto Form Submission",
+          "url": "https://github.com/baekwun/mis-auto-form-submission"
+        },
+        {
+          "label": "Auto Ticketing System",
+          "url": "https://github.com/baekwun/mis-auto-ticketing-system"
+        }
+      ],
+      "role": "Developer · System Administrator",
+      "details": "A full-stack internal ticketing platform for the MIS Department of Guanzon Auto Group, built entirely on Google Apps Script. Manages three request types — Adjustment Requests, System Access Requests, and Service Requests — across 12 branches. Key features include automated ticket number generation, HTML email notifications with live approval detection via Gmail, a public-facing request portal for branch employees, role-based support assignment with aging calculations, monthly data archiving to Google Drive, and a real-time stats dashboard with branch and workload analytics. Still actively maintained and improved. (Repositories are public demo versions — private production code is company-owned.)"
+    },
     {
       "id": "proj-1",
       "title": "Edukista",
@@ -143,47 +169,87 @@
       "github": "https://github.com/Evanchii/PayPoint",
       "role": "Graphics Design",
       "details": "Description coming soon."
-    },
-    {
-      "id": "proj-4",
-      "title": "GATIS (Guanzon Auto-Group Ticketing & Information System)",
-      "src": "",
-      "placeholder": "#e07b39",
-      "github": "https://github.com/baekwun/GATIS",
-      "githubExtra": [
-        { "label": "Auto Form Submission", "url": "https://github.com/baekwun/mis-auto-form-submission" },
-        { "label": "Auto Ticketing System", "url": "https://github.com/baekwun/mis-auto-ticketing-system" }
-      ],
-      "role": "Developer · System Administrator",
-      "details": "A full-stack internal ticketing platform for the MIS Department of Guanzon Auto Group, built entirely on Google Apps Script. Manages three request types — Adjustment Requests, System Access Requests, and Service Requests — across 12 branches. Key features include automated ticket number generation, HTML email notifications with live approval detection via Gmail, a public-facing request portal for branch employees, role-based support assignment with aging calculations, monthly data archiving to Google Drive, and a real-time stats dashboard with branch and workload analytics. Still actively maintained and improved. (Repositories are public demo versions — private production code is company-owned.)"
-    },
-    {
-      "id": "proj-5",
-      "title": "SpendSense — Pocket Finance Tracker",
-      "src": "",
-      "placeholder": "#4f8ef7",
-      "github": "https://github.com/baekwun/SpendSense",
-      "role": "Solo Developer",
-      "details": "A personal finance PWA built with vanilla HTML, CSS, and JavaScript — no frameworks, no dependencies. Tracks income and expenses by category, computes Philippine payslip net pay with standard deductions, and automatically splits income across named savings buckets by percentage. Includes donut and bar charts for spending breakdowns, offline-first storage via IndexedDB, and background sync to Supabase when internet is restored. Installable on Android and iOS as a full-screen PWA."
     }
   ],
-
   "media": [
-    { "title": "Capstone Project: Red Band",          "role": "Animator",           "embed": "https://www.youtube.com/embed/SC_pSNtCtd0" },
-    { "title": "Personal Project: Pssst...",          "role": "Cast/Producer",       "embed": "https://www.youtube.com/embed/klzSFXV2tHE" },
-    { "title": "Personal Project: Nicole Sy @ 18",    "role": "Videographer/Editor", "embed": "https://www.youtube.com/embed/Lf-lo2dk_6E" },
-    { "title": "School Project: My Hero",             "role": "Videographer/Editor", "embed": "https://www.youtube.com/embed/kcix1ZYC_Rc" },
-    { "title": "School Project: Kampo Misteryo",      "role": "Videographer/Editor", "embed": "https://www.youtube.com/embed/taVhM-JuDvc" },
-    { "title": "Personal Project: Sta. Barbara 2019", "role": "Videographer/Editor", "embed": "https://www.youtube.com/embed/RxDn2kZGgFc" },
-    { "title": "Personal Project: Hangad",            "role": "Videographer/Editor", "embed": "https://www.youtube.com/embed/FACa2XW32JM" }
+    {
+      "title": "Capstone Project: Red Band",
+      "role": "Animator",
+      "embed": "https://www.youtube.com/embed/SC_pSNtCtd0"
+    },
+    {
+      "title": "Personal Project: Pssst...",
+      "role": "Cast/Producer",
+      "embed": "https://www.youtube.com/embed/klzSFXV2tHE"
+    },
+    {
+      "title": "Personal Project: Nicole Sy @ 18",
+      "role": "Videographer/Editor",
+      "embed": "https://www.youtube.com/embed/Lf-lo2dk_6E"
+    },
+    {
+      "title": "School Project: My Hero",
+      "role": "Videographer/Editor",
+      "embed": "https://www.youtube.com/embed/kcix1ZYC_Rc"
+    },
+    {
+      "title": "School Project: Kampo Misteryo",
+      "role": "Videographer/Editor",
+      "embed": "https://www.youtube.com/embed/taVhM-JuDvc"
+    },
+    {
+      "title": "Personal Project: Sta. Barbara 2019",
+      "role": "Videographer/Editor",
+      "embed": "https://www.youtube.com/embed/RxDn2kZGgFc"
+    },
+    {
+      "title": "Personal Project: Hangad",
+      "role": "Videographer/Editor",
+      "embed": "https://www.youtube.com/embed/FACa2XW32JM"
+    }
   ],
-
   "art": [
-    { "id": "art-1", "title": "Artwork Title 1", "src": "https://via.placeholder.com/400x400?text=Art+1", "medium": "Digital Illustration", "year": "2024" },
-    { "id": "art-2", "title": "Artwork Title 2", "src": "https://via.placeholder.com/400x400?text=Art+2", "medium": "Digital Illustration", "year": "2024" },
-    { "id": "art-3", "title": "Artwork Title 3", "src": "https://via.placeholder.com/400x400?text=Art+3", "medium": "Digital Illustration", "year": "2023" },
-    { "id": "art-4", "title": "Artwork Title 4", "src": "https://via.placeholder.com/400x400?text=Art+4", "medium": "Graphic Design",       "year": "2023" },
-    { "id": "art-5", "title": "Artwork Title 5", "src": "https://via.placeholder.com/400x400?text=Art+5", "medium": "Digital Illustration", "year": "2023" },
-    { "id": "art-6", "title": "Artwork Title 6", "src": "https://via.placeholder.com/400x400?text=Art+6", "medium": "Graphic Design",       "year": "2022" }
+    {
+      "id": "art-1",
+      "title": "Artwork Title 1",
+      "src": "https://via.placeholder.com/400x400?text=Art+1",
+      "medium": "Digital Illustration",
+      "year": "2024"
+    },
+    {
+      "id": "art-2",
+      "title": "Artwork Title 2",
+      "src": "https://via.placeholder.com/400x400?text=Art+2",
+      "medium": "Digital Illustration",
+      "year": "2024"
+    },
+    {
+      "id": "art-3",
+      "title": "Artwork Title 3",
+      "src": "https://via.placeholder.com/400x400?text=Art+3",
+      "medium": "Digital Illustration",
+      "year": "2023"
+    },
+    {
+      "id": "art-4",
+      "title": "Artwork Title 4",
+      "src": "https://via.placeholder.com/400x400?text=Art+4",
+      "medium": "Graphic Design",
+      "year": "2023"
+    },
+    {
+      "id": "art-5",
+      "title": "Artwork Title 5",
+      "src": "https://via.placeholder.com/400x400?text=Art+5",
+      "medium": "Digital Illustration",
+      "year": "2023"
+    },
+    {
+      "id": "art-6",
+      "title": "Artwork Title 6",
+      "src": "https://via.placeholder.com/400x400?text=Art+6",
+      "medium": "Graphic Design",
+      "year": "2022"
+    }
   ]
 }

@@ -244,14 +244,14 @@ a:hover { color: grey; text-decoration: underline; text-underline-offset: 1rem; 
 /* ── PROJECT PLACEHOLDER (no image) ──────────────────── */
 .project-placeholder {
   width: 100%;
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 4 / 3;
   border-radius: 1rem;
   border: rgb(163,163,163) 0.1rem solid;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  padding: 1rem;
+  padding: 10px;
   box-sizing: border-box;
 }
 
@@ -287,7 +287,7 @@ a:hover { color: grey; text-decoration: underline; text-underline-offset: 1rem; 
 #project-container a,
 #project-container [class*="btn"],
 #project-container [class*="card"],
-#project-container [class*="project"] {
+#project-container [class*="project"]:not(.project-placeholder) {
   background: transparent !important;
   background-color: transparent !important;
 }
