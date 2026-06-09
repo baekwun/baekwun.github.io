@@ -76,9 +76,17 @@ function renderProjects(items) {
   items.forEach((item, idx) => {
     const box = document.createElement("div");
     box.className = "project-container-box";
+
+    // Thumbnail: use image if available, else render a colored placeholder
+    const thumbHtml = item.src
+      ? `<img src="${escapeHtml(item.src)}" alt="${escapeHtml(item.title)}" class="project-img" loading="lazy">`
+      : `<div class="project-placeholder" style="background:${escapeHtml(item.placeholder || '#444')}">
+           <span>${escapeHtml(item.title)}</span>
+         </div>`;
+
     box.innerHTML = `
       <label class="project-thumb" data-proj-id="${item.id || 'proj-' + idx}">
-        <img src="${escapeHtml(item.src || '')}" alt="${escapeHtml(item.title)}" class="project-img" loading="lazy">
+        ${thumbHtml}
       </label>
       <div class="contact-container">
         <p><a href="${item.github || '#'}" target="_blank" rel="noopener">${escapeHtml(item.title)}</a></p>
@@ -88,11 +96,18 @@ function renderProjects(items) {
     label.addEventListener("click", () => openModal(item.id || 'proj-' + idx));
     container.appendChild(box);
 
+    // Build "View repository" links — support multiple repos via githubExtra
+    const mainLink = `<a href="${item.github || '#'}" target="_blank" rel="noopener">View repository</a>`;
+    const extraLinks = Array.isArray(item.githubExtra)
+      ? item.githubExtra.map(r => `<a href="${escapeHtml(r.url)}" target="_blank" rel="noopener">${escapeHtml(r.label)}</a>`).join(' · ')
+      : '';
+    const repoLine = extraLinks ? `${mainLink} · ${extraLinks}` : mainLink;
+
     const imgList = Array.isArray(item.images) && item.images.length ? item.images : item.src ? [item.src] : [];
     const detailsHtml = `
       <p>Role: ${escapeHtml(item.role || "")}</p>
       <p>${escapeHtml(item.details || "")}</p>
-      <p><a href="${item.github || '#'}" target="_blank" rel="noopener">View repository</a></p>`;
+      <p>${repoLine}</p>`;
     createProjectModal(item.id || 'proj-' + idx, item.title, imgList, detailsHtml);
   });
 }
