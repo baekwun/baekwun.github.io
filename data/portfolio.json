@@ -148,9 +148,9 @@
       "title": "Edukista",
       "src": "assets/projects/project-1.png",
       "placeholder": "",
-      "github": "https://github.com/baekwun/edukista-v2",
+      "github": "https://baekwun.github.io/edukista-v2/",
       "role": "Front-end Developer",
-      "details": "Description coming soon."
+      "details": "a portfolio webpage for 3rd year BEED students of UPANG."
     },
     {
       "id": "proj-2",
@@ -159,7 +159,7 @@
       "placeholder": "",
       "github": "https://github.com/Wasabi199/stickygo",
       "role": "Project Manager · Front-end Developer",
-      "details": "Description coming soon."
+      "details": "StickyGo is a local printing company that provides print-on-demand services, such as art prints, illustrations, and local design printing."
     },
     {
       "id": "proj-3",
@@ -168,7 +168,7 @@
       "placeholder": "",
       "github": "https://github.com/Evanchii/PayPoint",
       "role": "Graphics Design",
-      "details": "Description coming soon."
+      "details": "PayPoint is designed to give commuters easy transactions in paying for public and private transportation. This project can also aid in keeping the drivers and the admin (LTO/Safe Seal Technology) on track about the payments coming from the commuters."
     }
   ],
   "media": [

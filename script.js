@@ -96,8 +96,8 @@ function renderProjects(items) {
     label.addEventListener("click", () => openModal(item.id || 'proj-' + idx));
     container.appendChild(box);
 
-    // Build "View repository" links — support multiple repos via githubExtra
-    const mainLink = `<a href="${item.github || '#'}" target="_blank" rel="noopener">View repository</a>`;
+    // Build "View repository/project" links — support multiple repos via githubExtra
+    const mainLink = `<a href="${item.github || '#'}" target="_blank" rel="noopener">View Project</a>`;
     const extraLinks = Array.isArray(item.githubExtra)
       ? item.githubExtra.map(r => `<a href="${escapeHtml(r.url)}" target="_blank" rel="noopener">${escapeHtml(r.label)}</a>`).join(' · ')
       : '';
